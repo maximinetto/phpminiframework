@@ -1,0 +1,14 @@
+{
+    "name": "maximinetto/mini-framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maximiliano Minetto",
+            "email": "maximinetto@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}
