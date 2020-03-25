@@ -3,19 +3,29 @@
 require "clases/clase_base.php";
 require "clases/pelicula.php";
 require "clases/service/audiovisual_listado.php";
+require "clases/helpers/audiovisual_converter.php";
 require_once('clases/template.php');
 require_once('clases/session.php');
 require_once('clases/auth.php');
 require_once 'vendor/autoload.php';
+require_once 'config/log.php';
 
+$log = new Logger("log.txt");
+$log->setTimestamp("D M d 'y h.i A");
+
+$log->putLog("Iniciando clase controlador película");
 
 class ControladorPelicula extends ControladorIndex
 {
-	private $listado;
+	private $listado, $log;
+
 
 	function __construct()
 	{
 		$this->listado = new AudioVisualListado();
+		$this->log = new Logger("log.txt");
+		$this->log->setTimestamp("D M d 'y h.i A");
+	
 	}
 
 	function listado($params = array())
@@ -26,8 +36,8 @@ class ControladorPelicula extends ControladorIndex
 		$buscar = "";
 		$titulo = "Listado";
 		$mensaje = "";
-
 		$peliculas = array();
+		
 		if (!empty($params)) {
 			if ($params[0] == "borrar") {
 				$pelicula = new Film();
@@ -44,10 +54,10 @@ class ControladorPelicula extends ControladorIndex
 					$peliculas = $pelicula->getListado();
 				}
 			} else {
-				$this->listado->busquedaPorDefecto();
+				$peliculas = $this->listado->busquedaPorDefecto();
 			}
 		} else {
-			$this->listado->busquedaPorDefecto();
+			$peliculas = $this->listado->busquedaPorDefecto();
 		}
 
 		//Llamar a la vista
@@ -58,7 +68,6 @@ class ControladorPelicula extends ControladorIndex
 			'titulo' => $titulo,
 			'mensaje' => $mensaje,
 		);
-		$tpl->asignar('pelicula_nuevo', $this->getUrl("usuario", "nuevo"));
 		$tpl->mostrar('peliculas_listado', $datos);
 	}
 
@@ -67,6 +76,7 @@ class ControladorPelicula extends ControladorIndex
 
 		Auth::estaLogueado();
 
+		$this->log->putLog("Entra en buscar");
 		$buscar = "";
 		$titulo = "Listado";
 		$mensaje = "";
@@ -74,14 +84,17 @@ class ControladorPelicula extends ControladorIndex
 		if (isset($_POST["buscar"]) && $_POST["buscar"] != "") {
 			$titulo = "Buscando..";
 			$buscar = urlencode($_POST['buscar']);
-
+			$this->log->putLog($buscar);
 			$peliculas = $this->listado->buscarPorNombre($buscar);
 		} else {
-			$this->listado->busquedaPorDefecto();
+			$peliculas = $this->listado->busquedaPorDefecto();
+			$this->log->putLog("Busqueda por defecto");
 		}
 
 		//Llamar a la vista
 		//require_once("vistas/peliculas_listado.php");
+
+		$this->log->getLog();
 
 		$tpl = Template::getInstance();
 		$datos = array(
@@ -96,12 +109,22 @@ class ControladorPelicula extends ControladorIndex
 		$tpl->mostrar('peliculas_listado', $datos);
 	}
 
-	function getFilmById(string $idVideo)
+	function detalles($params = array())
 	{
-
+		$idVideo = $params[0];
+		$this->log->putLog($idVideo);
 		$converter = new AudioVisualConverter();
-		$audiovisual = $converter();
-		return $audiovisual;
+		$audiovisual = $converter($idVideo);
+		
+		$tpl = Template::getInstance();
+		$datos = array(
+			'buscar' => '',
+			'titulo' => $audiovisual->getTitle(),
+			'mensaje' => '',
+			'audioVisual' => $audiovisual
+		);
+
+		$tpl->mostrar('detalles/pelicula_detalle', $datos);
 	}
 
 	function favoritos()

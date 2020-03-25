@@ -8,6 +8,14 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">{$proyecto}</a>
+          <ul class="nav navbar-nav">
+            <li>
+               <a href="{$url_base}pelicula/listado">Peliculas</a>
+            </li>
+            <li>
+              <a href="{$url_base}usuario/listado">Usuarios</a>
+            </li>
+          </ul>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">

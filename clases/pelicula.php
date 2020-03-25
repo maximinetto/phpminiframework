@@ -4,10 +4,13 @@
 
     class Film extends AudioVisual{
 
-        public function __construct()
+        function __construct()
         {
-            $array = array('');
-            parent::__construct($array);
+            $a = func_get_args();
+            $i = func_num_args();
+            if (method_exists($this,$f='__construct'.$i)) {
+                call_user_func_array(array($this,$f),$a);
+            }
         }
 
         public function __construct1($array)

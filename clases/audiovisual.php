@@ -1,5 +1,7 @@
 <?php
 
+require_once 'config/log.php';
+
 abstract class AudioVisual extends ClaseBase
 {
     private $idVideo, $title, $director, $poster, $year;

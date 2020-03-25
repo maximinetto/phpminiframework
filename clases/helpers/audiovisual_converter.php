@@ -27,6 +27,7 @@
             ]);
             $json_response = json_decode($response->getBody(), true);        
             $this->response = $json_response;
+            
             $tipo = $json_response['Type'];
             $audiovisual = self::getClase($tipo);
             return $audiovisual;
