@@ -3,6 +3,7 @@
 require "clases/clase_base.php";
 require "clases/pelicula.php";
 require "clases/service/audiovisual_listado.php";
+require "clases/service/usuario/usuario_fabrica.php";
 require "clases/helpers/audiovisual_converter.php";
 require_once('clases/template.php');
 require_once('clases/session.php');
@@ -10,10 +11,6 @@ require_once('clases/auth.php');
 require_once 'vendor/autoload.php';
 require_once 'config/log.php';
 
-$log = new Logger("log.txt");
-$log->setTimestamp("D M d 'y h.i A");
-
-$log->putLog("Iniciando clase controlador película");
 
 class ControladorPelicula extends ControladorIndex
 {
@@ -23,41 +20,24 @@ class ControladorPelicula extends ControladorIndex
 	function __construct()
 	{
 		$this->listado = new AudioVisualListado();
-		$this->log = new Logger("log.txt");
-		$this->log->setTimestamp("D M d 'y h.i A");
-	
+		$this->log = Logger::defaultLog();
 	}
 
 	function listado($params = array())
 	{
-
 		Auth::estaLogueado();
 
 		$buscar = "";
 		$titulo = "Listado";
 		$mensaje = "";
 		$peliculas = array();
+		$favoritos = array();
 		
 		if (!empty($params)) {
-			if ($params[0] == "borrar") {
-				$pelicula = new Film();
-				$idABorrar = $params[1];
-				if ($pelicula->borrar($idABorrar)) {
-					//Redirigir al listado
-					//header('Location: index.php');exit;
-					$this->redirect("usuario", "listado");
-				} else {
-					//Mostrar error
-					$usr = $pelicula->obtenerPorId($idABorrar);
-					//$mensaje="Error!! No se pudo borrar el usuario  <b>".$usr->getNombre()." ".$usr->getApellido()."</b>";
-					$mensaje = "ERROR. No existe el usuario";
-					$peliculas = $pelicula->getListado();
-				}
-			} else {
-				$peliculas = $this->listado->busquedaPorDefecto();
-			}
+			
 		} else {
 			$peliculas = $this->listado->busquedaPorDefecto();
+			$favoritos = $this->favoritos();
 		}
 
 		//Llamar a la vista
@@ -67,7 +47,9 @@ class ControladorPelicula extends ControladorIndex
 			'buscar' => $buscar,
 			'titulo' => $titulo,
 			'mensaje' => $mensaje,
+			'favoritos' => $favoritos
 		);
+
 		$tpl->mostrar('peliculas_listado', $datos);
 	}
 
@@ -81,13 +63,17 @@ class ControladorPelicula extends ControladorIndex
 		$titulo = "Listado";
 		$mensaje = "";
 		$peliculas = array();
+		$favoritos = array();
+
 		if (isset($_POST["buscar"]) && $_POST["buscar"] != "") {
 			$titulo = "Buscando..";
 			$buscar = urlencode($_POST['buscar']);
 			$this->log->putLog($buscar);
 			$peliculas = $this->listado->buscarPorNombre($buscar);
+			$favoritos = $this->favoritos();
 		} else {
 			$peliculas = $this->listado->busquedaPorDefecto();
+			$favoritos = $this->favoritos();
 			$this->log->putLog("Busqueda por defecto");
 		}
 
@@ -102,10 +88,9 @@ class ControladorPelicula extends ControladorIndex
 			'buscar' => $buscar,
 			'titulo' => $titulo,
 			'mensaje' => $mensaje,
+			'favoritos' => $favoritos
 		);
 
-
-		$tpl->asignar('pelicula_nuevo', $this->getUrl("usuario", "nuevo"));
 		$tpl->mostrar('peliculas_listado', $datos);
 	}
 
@@ -127,10 +112,14 @@ class ControladorPelicula extends ControladorIndex
 		$tpl->mostrar('detalles/pelicula_detalle', $datos);
 	}
 
-	function favoritos()
-	{
-		$pelicula = new Film();
-		$peliculas = $pelicula->getListado();
-		echo json_encode($peliculas);
+
+	function favoritos(){
+		
+		$usuario = new Usuario();
+		$idUsuario = Session::get("usuario_id");
+		$usuario = $usuario->getUsuarioByID($idUsuario);
+		$favoritos = UsuarioServiceFactory::createService()
+					  ->listadoFavoritosPorUsuario($usuario);
+	    return $favoritos;
 	}
 }

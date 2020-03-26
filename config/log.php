@@ -26,4 +26,10 @@ class Logger {
         return $content;
     }
 
+    public static function defaultLog(){
+        $log = new Logger("log.txt");
+        $log->setTimestamp("D M d 'y h.i A");
+        return $log;
+    }
+
 }

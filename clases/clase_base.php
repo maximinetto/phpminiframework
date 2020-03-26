@@ -27,7 +27,6 @@ class ClaseBase{
 
         while ( $fila = $resultado->fetch_object() )
         {
-            
             $objeto= new $this->modelo($fila);
             $resultados[]=$objeto;
         } 

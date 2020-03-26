@@ -26,6 +26,7 @@
           {if $mensaje!=""}
             <div class="alert alert-danger" role="alert">{$mensaje}</div>
           {/if}
+
           <div class="row">
             {foreach from=$peliculas item=audiovisual key=key}
             <div class="col">

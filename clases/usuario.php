@@ -1,11 +1,16 @@
 <?php
-class Usuario extends ClaseBase {
+require_once("clases/audiovisual.php");
+
+class Usuario extends ClaseBase{
 	public $id=0;
     public $nombre = '';
 	public $apellido = '';
     public $ci = '';
 	public $edad = 0;
     public $email='';
+
+    private $peliculasFavoritas;
+
     //Contructor que recibe un array
 	public function __construct($obj=NULL) {
         //$this->db=DB::conexion();
@@ -16,21 +21,25 @@ class Usuario extends ClaseBase {
         }
         $tabla="usuarios";
         parent::__construct($tabla);
-
+        $this->peliculasFavoritas = array();
     }
    
     public function getid() {
         return $this->id;
     }
+    
     public function getNombre() {
         return $this->nombre;
     }
+    
     public function getApellido() {
         return $this->apellido;
     }
+    
     public function getCI() {
         return $this->ci;
     }
+    
     public function getEdad() {
         return $this->edad;
     }
@@ -38,6 +47,7 @@ class Usuario extends ClaseBase {
     public function setNombre($nombre){
         $this->nombre=$nombre;
     }
+    
     public function getEmail() {
         return $this->email;
     }
@@ -45,15 +55,34 @@ class Usuario extends ClaseBase {
     public function setEmail($email){
         $this->email=$email;
     }
+    
     public function setApellido($apellido){
         $this->apellido=$apellido;
     }
+    
     public function setCI($ci){
         $this->ci=$ci;
     }
+    
     public function setEdad($edad){
         $this->edad=$edad;
     }
+
+    public function getPeliculasFavoritas(){
+        return $this->peliculasFavoritas;
+    }
+
+    public function agregarPeliculaFavorita(AudioVisual $film){
+        $this->peliculasFavoritas[$film->getIdVideo()] = $film;
+    }
+
+    public function eliminarPeliculaFavorita(AudioVisual $film){
+        unset($this->peliculasFavoritas[$film->getIdVideo()]);
+    }
+
+    public function setPeliculasFavoritas($peliculasFavoritas){
+        $this->peliculasFavoritas = $peliculasFavoritas;
+    }    
 
     public function getBusqueda($buscar){
         $usuarios=array();
@@ -67,9 +96,24 @@ class Usuario extends ClaseBase {
         $resultado = $stmt->get_result();
         while ($fila=$resultado->fetch_object()) {
             $persona= new Usuario($fila);
-                $usuarios[]=$persona;
+            $usuarios[]=$persona;
         }
         return $usuarios;
+    }
+
+    public function getUsuarioByID($id){
+        $stmt = $this->getDB()->prepare( 
+            "SELECT * FROM usuarios 
+            WHERE id = ? " );
+
+        $stmt->bind_param( "i", $id );
+        $stmt->execute();
+        $resultado = $stmt->get_result();
+        
+        while ( $fila = $resultado->fetch_object() ) {
+            $persona= new Usuario($fila);
+        }
+        return $persona;
     }
     
 
