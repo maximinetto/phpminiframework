@@ -15,4 +15,8 @@ class UsuarioSalvar{
         $this->userRepository->guardar($usuario->getid(), $favoritos);
     }
 
+    public function borrarFavorito(Usuario $usuario, $favorito){
+        return $this->userRepository->borrarFavorito($usuario->getid(), $favorito);
+    }
+
 }

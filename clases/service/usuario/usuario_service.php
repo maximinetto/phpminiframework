@@ -25,4 +25,8 @@ class UsuarioService {
     public function listadoFavoritosPorUsuario(Usuario $usuario){
         return $this->usuarioListado->getListadoFavoritosPorUsuario($usuario);
     }
+
+    public function borrarFavorito(Usuario $usuario, $favorito){
+        return $this->usuarioSalvar->borrarFavorito($usuario, $favorito);
+    }
 }

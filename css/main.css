@@ -86,3 +86,12 @@ p span {
 
     display: inline-block;
 }
+
+.favorito{
+    background-color: transparent;
+    border: none;
+}
+
+.favorito .fas.fa-star {
+    color: rgba(246,21,11,1);
+}

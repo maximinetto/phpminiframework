@@ -2,6 +2,7 @@
 
 require "clases/clase_base.php";
 require "clases/pelicula.php";
+require "clases/detalle_audiovisual.php";
 require "clases/service/audiovisual_listado.php";
 require "clases/service/usuario/usuario_fabrica.php";
 require "clases/helpers/audiovisual_converter.php";
@@ -40,14 +41,15 @@ class ControladorPelicula extends ControladorIndex
 			$favoritos = $this->favoritos();
 		}
 
+		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
+
 		//Llamar a la vista
 		$tpl = Template::getInstance();
 		$datos = array(
-			'peliculas' => $peliculas,
+			'detalles' => $detalles,
 			'buscar' => $buscar,
 			'titulo' => $titulo,
 			'mensaje' => $mensaje,
-			'favoritos' => $favoritos
 		);
 
 		$tpl->mostrar('peliculas_listado', $datos);
@@ -82,13 +84,15 @@ class ControladorPelicula extends ControladorIndex
 
 		$this->log->getLog();
 
+		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
+
+		//Llamar a la vista
 		$tpl = Template::getInstance();
 		$datos = array(
-			'peliculas' => $peliculas,
+			'detalles' => $detalles,
 			'buscar' => $buscar,
 			'titulo' => $titulo,
 			'mensaje' => $mensaje,
-			'favoritos' => $favoritos
 		);
 
 		$tpl->mostrar('peliculas_listado', $datos);
@@ -112,8 +116,14 @@ class ControladorPelicula extends ControladorIndex
 		$tpl->mostrar('detalles/pelicula_detalle', $datos);
 	}
 
+	function cambiarFavorito($params = array()){
+		var_dump($params);
+		$json = json_encode($params);
+		echo $json;
+	}
 
-	function favoritos(){
+
+	private function favoritos(){
 		
 		$usuario = new Usuario();
 		$idUsuario = Session::get("usuario_id");
@@ -122,4 +132,6 @@ class ControladorPelicula extends ControladorIndex
 					  ->listadoFavoritosPorUsuario($usuario);
 	    return $favoritos;
 	}
+
+	
 }

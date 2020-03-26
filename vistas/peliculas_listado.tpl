@@ -7,9 +7,10 @@
     <title>{$proyecto}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap4.min.css" rel="stylesheet">
+    <link href="css/bootstrap4.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="fonts/css/all.min.css" rel="stylesheet" />
+    <link href="css/dashboard.css" rel="stylesheet" />
     
     <link rel="stylesheet" href="css/main.css" />
     
@@ -20,26 +21,39 @@
     <div class="container-fluid">
       <div class="row">
        
-        <div class="col-sm-12  col-md-12  main">
+        <div class="col-sm-12 col-md-12 main">
           <h1 class="primary">Peliculas</h1>
-          <h4 >{$titulo}</h2>
+          <h4>{$titulo}</h4>
           {if $mensaje!=""}
             <div class="alert alert-danger" role="alert">{$mensaje}</div>
           {/if}
 
           <div class="row">
-            {foreach from=$peliculas item=audiovisual key=key}
+            {foreach from=$detalles item=detalle key=key}
             <div class="col">
               <div 
                 class="card film" 
-                id={$audiovisual["imdbID"]} 
+                id={$detalle->getAudiovisual()->getIdVideo()} 
                 style="width: 18rem;"
-                onclick="window.location ='{$url_base}pelicula/detalles/{$audiovisual['imdbID']}'">
-                <img src={$audiovisual["Poster"]} class="card-img-top" alt="pelicula">
+                onclick="window.location ='{$url_base}pelicula/detalles/{$detalle->getAudiovisual()->getIdVideo()}'">
+                <img 
+                  src={$detalle->getAudiovisual()->getPoster()} 
+                  class="card-img-top" 
+                  alt="pelicula"
+                />
                 <div class="card-body">
                   <h5 class="card-title">
-                    {$audiovisual['Year']} - {$audiovisual['Title']}
+                    {$detalle->getAudiovisual()->getYear()} - {$detalle->getAudiovisual()->getTitle()}
                   </h5>
+                  <div class="row">
+                    <button class="favorito"> 
+                      {if $detalle->esFavorito()}
+                        <i class="fas fa-star"></i>    
+                      {else}
+                        <i class="far fa-star"></i>
+                      {/if}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

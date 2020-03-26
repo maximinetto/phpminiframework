@@ -73,18 +73,6 @@ class UserRepository {
 
     public function guardar($idUsuario, $favoritas){
         foreach($favoritas as $favorita){
-            $stmt = $this->db->prepare(
-                "DELETE FROM favoritos" .
-                "WHERE " . 
-                "id_usuario = ? AND imdbID = ?"
-            );
-
-            $stmt->bind_param("is", $idUsuario, $favorita->getIdVideo());
-
-            if(!$stmt->execute()){
-                echo "Fallo la ejecución";
-                return;
-            }
             $stmt = $this->db->prepare( 
                 "INSERT INTO favoritos 
             (id_usuario, imdbID, tipo) 
@@ -96,6 +84,19 @@ class UserRepository {
                 return;
             }       
         }
+    }
+
+    public function borrarFavorito($idUsuario, $favorita){
+        $stmt = $this->db->prepare(
+            "DELETE FROM favoritos" .
+            "WHERE " . 
+            "id_usuario = ? AND imdbID = ?"
+        );
+
+        $stmt->bind_param("is", $idUsuario, $favorita->getIdVideo());
+
+        return $stmt->execute();
+        
     }
 
     private function isDifferentUser($previousID, $lastID){
