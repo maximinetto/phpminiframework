@@ -116,12 +116,26 @@ class ControladorPelicula extends ControladorIndex
 		$tpl->mostrar('detalles/pelicula_detalle', $datos);
 	}
 
-	function cambiarFavorito($params = array()){
-		var_dump($params);
-		$json = json_encode($params);
-		echo $json;
+	function agregarFavorito($params = array()){
+		$this->log->putLog("peticion ajax agregar");
+		$idVideo = $params[0];
+		$this->log->putLog("Parametro: $idVideo");
+
+		$res = array("idVideo" => $idVideo);
+		header('Content-Type: application/json');
+		$res = json_encode($res, true);
+		$this->log->putLog("Json: $res");
+		echo $res;
 	}
 
+	function eliminarFavorito($params = array()){
+		$this->log->putLog("peticion ajax agregar");
+		$idVideo = $params[0];
+
+		header('Content-Type: application/json');
+		$json = json_encode($idVideo, true);
+		echo $json;
+	}
 
 	private function favoritos(){
 		

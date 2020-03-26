@@ -15,6 +15,10 @@ img {
     width: 200px;
 }
 
+img:hover{
+    cursor: pointer;
+}
+
 .col{
     margin-bottom: 20px;
 }
@@ -34,10 +38,6 @@ img {
 .row{
     align-items: center;
     justify-content: center;
-}
-
-.film:hover{
-    cursor: pointer;
 }
 
 h4{

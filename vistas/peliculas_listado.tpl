@@ -35,11 +35,12 @@
                 class="card film" 
                 id={$detalle->getAudiovisual()->getIdVideo()} 
                 style="width: 18rem;"
-                onclick="window.location ='{$url_base}pelicula/detalles/{$detalle->getAudiovisual()->getIdVideo()}'">
+              >
                 <img 
                   src={$detalle->getAudiovisual()->getPoster()} 
                   class="card-img-top" 
                   alt="pelicula"
+                   onclick="window.location ='{$url_base}pelicula/detalles/{$detalle->getAudiovisual()->getIdVideo()}'"
                 />
                 <div class="card-body">
                   <h5 class="card-title">
@@ -48,9 +49,14 @@
                   <div class="row">
                     <button class="favorito"> 
                       {if $detalle->esFavorito()}
-                        <i class="fas fa-star"></i>    
+                        <i 
+                          class="fas fa-star" 
+                          id="eliminarFavorito-{$detalle->getAudiovisual()->getIdVideo()}"></i>    
                       {else}
-                        <i class="far fa-star"></i>
+                        <i 
+                          class="far fa-star"
+                          id="agregarFavorito-{$detalle->getAudiovisual()->getIdVideo()}" 
+                        ></i>
                       {/if}
                     </button>
                   </div>
@@ -64,10 +70,10 @@
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap4.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap4.min.js"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
-    <script type="text/javascript" scr="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     
   </body>
 </html>

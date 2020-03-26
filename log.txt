@@ -63,3 +63,40 @@ Thu Mar 26 '20 06.58 PM &raquo; fast
 Thu Mar 26 '20 07.00 PM &raquo; tt0069134
 Thu Mar 26 '20 07.05 PM &raquo; Entra en buscar
 Thu Mar 26 '20 07.05 PM &raquo; fast
+Thu Mar 26 '20 07.53 PM &raquo; Entra en buscar
+Thu Mar 26 '20 07.53 PM &raquo; fast
+Thu Mar 26 '20 07.53 PM &raquo; tt0110912
+Thu Mar 26 '20 07.54 PM &raquo; tt0069134
+Thu Mar 26 '20 07.54 PM &raquo; tt0110912
+Thu Mar 26 '20 07.55 PM &raquo; tt0110912
+Thu Mar 26 '20 07.55 PM &raquo; tt0110912
+Thu Mar 26 '20 07.59 PM &raquo; tt0110912
+Thu Mar 26 '20 07.59 PM &raquo; tt0110912
+Thu Mar 26 '20 08.02 PM &raquo; tt3265262
+Thu Mar 26 '20 08.02 PM &raquo; tt0069134
+Thu Mar 26 '20 08.22 PM &raquo; tt4128102
+Thu Mar 26 '20 08.23 PM &raquo; tt0110912
+Thu Mar 26 '20 08.25 PM &raquo; tt0069134
+Thu Mar 26 '20 08.28 PM &raquo; tt0110912
+Thu Mar 26 '20 08.29 PM &raquo; tt0110912
+Thu Mar 26 '20 08.31 PM &raquo; tt0110912
+Thu Mar 26 '20 08.45 PM &raquo; peticion ajax agregar
+Thu Mar 26 '20 08.46 PM &raquo; peticion ajax agregar
+Thu Mar 26 '20 08.46 PM &raquo; Array
+Thu Mar 26 '20 08.48 PM &raquo; peticion ajax agregar
+Thu Mar 26 '20 08.49 PM &raquo; peticion ajax agregar
+Thu Mar 26 '20 08.51 PM &raquo; peticion ajax agregar
+Thu Mar 26 '20 08.53 PM &raquo; peticion ajax agregar
+Thu Mar 26 '20 08.55 PM &raquo; peticion ajax agregar
+Thu Mar 26 '20 08.55 PM &raquo; Parametro: tt3265262
+Thu Mar 26 '20 08.55 PM &raquo; Json: 
+Thu Mar 26 '20 08.57 PM &raquo; peticion ajax agregar
+Thu Mar 26 '20 08.57 PM &raquo; Parametro: tt0110912
+Thu Mar 26 '20 08.57 PM &raquo; Json: 
+Thu Mar 26 '20 08.57 PM &raquo; peticion ajax agregar
+Thu Mar 26 '20 08.57 PM &raquo; Parametro: tt0110912
+Thu Mar 26 '20 08.57 PM &raquo; Json: 
+Thu Mar 26 '20 09.00 PM &raquo; peticion ajax agregar
+Thu Mar 26 '20 09.00 PM &raquo; Parametro: tt0110912
+Thu Mar 26 '20 09.00 PM &raquo; Json: {"idVideo":"tt0110912"}
+Thu Mar 26 '20 09.00 PM &raquo; peticion ajax agregar
