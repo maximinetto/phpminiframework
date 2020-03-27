@@ -202,3 +202,30 @@ Fri Mar 27 '20 07.32 PM &raquo; Id usuario:
 Fri Mar 27 '20 07.32 PM &raquo; 
 Fri Mar 27 '20 07.33 PM &raquo; 
 Fri Mar 27 '20 07.33 PM &raquo; TITULO: Pulp: A Film About Life, Death and Supermarkets, ID: tt3265262
+Fri Mar 27 '20 07.46 PM &raquo; Id usuario: 29
+Fri Mar 27 '20 07.46 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 07.46 PM &raquo; Id usuario: 29
+Fri Mar 27 '20 07.46 PM &raquo; Maxi Minetto 47725190
+Fri Mar 27 '20 07.46 PM &raquo; Maxi Minetto 47725190
+Fri Mar 27 '20 07.46 PM &raquo; TITULO: Pulp Fiction, ID: tt0110912
+Fri Mar 27 '20 07.46 PM &raquo; Json: {"ok":true,"message":"Se ha guardado exitosamente"}
+Fri Mar 27 '20 07.47 PM &raquo; Id usuario: 29
+Fri Mar 27 '20 07.47 PM &raquo; Id usuario: 29
+Fri Mar 27 '20 07.49 PM &raquo; Id usuario: 29
+Fri Mar 27 '20 07.50 PM &raquo; Id usuario: 29
+Fri Mar 27 '20 07.50 PM &raquo; Pelicula
+Fri Mar 27 '20 07.50 PM &raquo; Película
+Fri Mar 27 '20 07.51 PM &raquo; Id usuario: 29
+Fri Mar 27 '20 07.51 PM &raquo; Pelicula
+Fri Mar 27 '20 07.51 PM &raquo; Pelicula
+Fri Mar 27 '20 07.51 PM &raquo; Pelicula
+Fri Mar 27 '20 07.51 PM &raquo; movie
+Fri Mar 27 '20 07.51 PM &raquo; movie
+Fri Mar 27 '20 07.51 PM &raquo; movie
+Fri Mar 27 '20 07.51 PM &raquo; movie
+Fri Mar 27 '20 07.51 PM &raquo; movie
+Fri Mar 27 '20 07.51 PM &raquo; movie
+Fri Mar 27 '20 07.51 PM &raquo; series
+Fri Mar 27 '20 07.51 PM &raquo; movie
+Fri Mar 27 '20 07.51 PM &raquo; movie
+Fri Mar 27 '20 07.51 PM &raquo; movie

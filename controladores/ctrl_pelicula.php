@@ -120,6 +120,7 @@ class ControladorPelicula extends ControladorIndex
 	}
 
 	function agregarFavorito($params = array()){
+		Session::init();
 		$this->log->putLog("peticion ajax agregar");
 		$audiovisual = $this->getAudioVisual($params);
 		$usuario = self::getUsuario();
@@ -135,6 +136,7 @@ class ControladorPelicula extends ControladorIndex
 	}
 
 	function eliminarFavorito($params = array()){
+		Session::init();
 		$this->log->putLog("peticion ajax eliminar favorito");
 		$audiovisual = self::getAudioVisual($params);
 		$usuario = self::getUsuario();

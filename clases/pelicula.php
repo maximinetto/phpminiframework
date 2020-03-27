@@ -27,7 +27,7 @@
 
 
         public function tipo(){
-            return "Película";
+            return "Pelicula";
         }
         
     }

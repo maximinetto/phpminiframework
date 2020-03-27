@@ -6,6 +6,7 @@ require_once('clases/episodio.php');
 
 class FactoryAudioVisual{
     public static function getAudiovisual(String $tipo, $attributes){
+        Logger::defaultLog()->putLog($tipo);
         switch($tipo){
             case "movie":
             case "Pelicula":
