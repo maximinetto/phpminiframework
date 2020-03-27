@@ -4,7 +4,6 @@
     require_once __DIR__ . "/../episodio.php";
     
     final class AudioVisualConverter{
-        private $idVideo;
         private static $client;
         private $url;
         private $apikey;

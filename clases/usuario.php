@@ -157,5 +157,10 @@ class Usuario extends ClaseBase{
         Session::init();
         Session::destroy();
    } 
+
+   public function __toString()
+   {
+       return "$this->nombre $this->apellido $this->ci";
+   }
 }
 ?>

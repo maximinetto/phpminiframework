@@ -42,8 +42,7 @@ class ControladorPelicula extends ControladorIndex
 		}
 
 		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
-
-		var_dump("hola");
+		
 		Session::set("detalles", $detalles);
 
 		//Llamar a la vista
@@ -123,7 +122,8 @@ class ControladorPelicula extends ControladorIndex
 	function agregarFavorito($params = array()){
 		$this->log->putLog("peticion ajax agregar");
 		$audiovisual = $this->getAudioVisual($params);
-		$usuario = $this->getUsuario();
+		$usuario = self::getUsuario();
+		$this->log->putLog($usuario);
 		if(isset($audiovisual)){
 			$res = $this->guardarFavorito($usuario, $audiovisual);
 		}
@@ -151,6 +151,7 @@ class ControladorPelicula extends ControladorIndex
 	private function getUsuario(){
 		$usuario = new Usuario();
 		$idUsuario = Session::get("usuario_id");
+		$this->log->putLog("Id usuario: " . $idUsuario);
 		$usuario = $usuario->getUsuarioByID($idUsuario);
 		return $usuario;
 	}
@@ -165,9 +166,8 @@ class ControladorPelicula extends ControladorIndex
 
 	private function getAudioVisual($params){
 		$idVideo = $params[0];
-		$detalles = Session::get("detalles");
-		$this->log->putLog(sizeof($detalles));
-		return DetallesAudioVisual::getFavoritoByIdVideo($detalles, $idVideo);	
+		$converter = new AudioVisualConverter();
+		return $converter($idVideo);
 	}
 
 	private function respuestaServidor($res){
@@ -185,6 +185,9 @@ class ControladorPelicula extends ControladorIndex
 	}
 
 	private function guardarFavorito($usuario, $audiovisual){
+		$log = Logger::defaultLog();
+		$log->putLog($usuario);
+		$log->putLog($audiovisual);
 		UsuarioServiceFactory::createService()->salvarFavorito($usuario, array($audiovisual));
 		return array(
 				"ok" => true, 

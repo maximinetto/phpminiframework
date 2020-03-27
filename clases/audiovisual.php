@@ -221,4 +221,9 @@ abstract class AudioVisual extends ClaseBase
 
         return $this;
     }
+
+    public function __toString()
+    {
+        return "TITULO: $this->title, ID: $this->idVideo";
+    }
 }
