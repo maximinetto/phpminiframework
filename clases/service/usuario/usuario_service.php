@@ -23,7 +23,9 @@ class UsuarioService {
     }
     
     public function salvarFavorito(Usuario $usuario, $favoritos){
-        $this->usuarioSalvar->salvar($usuario, $favoritos);
+        $usuarioBuscado = $usuario;
+        $fav = $favoritos;
+        $this->usuarioSalvar->salvar($usuarioBuscado, $fav);
     }
 
     public function borrarFavorito(Usuario $usuario, $favorito){

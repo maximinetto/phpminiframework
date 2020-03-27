@@ -11,11 +11,16 @@ function agregarFavorito(url, idVideo){
         },
     })
     .then(function(response){
-        console.log(response);
         return response.json();
     })
     .then(function(data){
-        console.log(data);
+        const { ok } = data;
+        if(ok){
+            const i = document.getElementById("agregarFavorito-" + idVideo);
+            i.id = "eliminarFavorito-" + idVideo;
+            i.classList.remove("far");
+            i.classList.add("fas");
+        }
     });
 }
 
@@ -32,7 +37,13 @@ function eliminarFavorito(url, idVideo){
         return response.json();
     })
     .then(function(data){
-        console.log(data);
+        const { ok } = data;
+        if(ok){
+            const i = document.getElementById("eliminarFavorito-" + idVideo);
+            i.id = "agregarFavorito-" + idVideo;
+            i.classList.remove("fas");
+            i.classList.add("far");
+        }
     });
 }
 

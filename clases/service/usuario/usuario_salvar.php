@@ -12,7 +12,9 @@ class UsuarioSalvar{
     }
 
     public function salvar(Usuario $usuario, $favoritos){
-        $this->userRepository->guardar($usuario->getid(), $favoritos);
+        $id = $usuario->getid();
+        $favoritosArray = $favoritos;
+        $this->userRepository->guardar($id, $favoritosArray);
     }
 
     public function borrarFavorito(Usuario $usuario, $favorito){

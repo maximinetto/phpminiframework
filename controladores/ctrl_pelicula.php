@@ -173,8 +173,7 @@ class ControladorPelicula extends ControladorIndex
 	}
 
 	private function respuestaServidor($res){
-		header('Content-Type: application/json');
-		$res = json_encode($res, true);
+		$res = json_encode($res);
 		$this->log->putLog("Json: $res");
 		echo $res;
 	}
@@ -201,7 +200,7 @@ class ControladorPelicula extends ControladorIndex
 		UsuarioServiceFactory::createService()->borrarFavorito($usuario, $audiovisual);
 		return array(
 			"ok" => true, 
-		"message" => "Se ha guardado exitosamente");
+		"message" => "Se ha borrado exitosamente");
 	}
 
 	

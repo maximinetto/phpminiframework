@@ -77,7 +77,10 @@ class UserRepository {
                 "INSERT INTO favoritos 
             (id_usuario, imdbID, tipo) 
                VALUES (?,?,?)" );
-            $stmt->bind_param("iss",$idUsuario, $favorita->getIdVideo(), $favorita->tipo());
+
+            $id = $favorita->getIdVideo();    
+            $tipo = $favorita->tipo();
+            $stmt->bind_param("iss", $idUsuario, $id, $tipo);
 
             if(!$stmt->execute()) {
                 echo "Fallo la ejecución";
@@ -88,12 +91,13 @@ class UserRepository {
 
     public function borrarFavorito($idUsuario, $favorita){
         $stmt = $this->db->prepare(
-            "DELETE FROM favoritos" .
+            "DELETE FROM favoritos " .
             "WHERE " . 
             "id_usuario = ? AND imdbID = ?"
         );
 
-        $stmt->bind_param("is", $idUsuario, $favorita->getIdVideo());
+        $idVideo = $favorita->getIdVideo();
+        $stmt->bind_param("is", $idUsuario, $idVideo);
 
         return $stmt->execute();
         
