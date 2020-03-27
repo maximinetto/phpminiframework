@@ -14,16 +14,16 @@ class UsuarioService {
         $this->usuarioListado = new UsuarioListado();
     }
 
-    public function salvarFavorito(Usuario $usuario, $favoritos){
-        $this->usuarioSalvar->salvar($usuario, $favoritos);
-    }
-
     public function listarFavoritos(){
         return $this->usuarioListado->getListadoFavoritos();
     }
 
     public function listadoFavoritosPorUsuario(Usuario $usuario){
         return $this->usuarioListado->getListadoFavoritosPorUsuario($usuario);
+    }
+    
+    public function salvarFavorito(Usuario $usuario, $favoritos){
+        $this->usuarioSalvar->salvar($usuario, $favoritos);
     }
 
     public function borrarFavorito(Usuario $usuario, $favorito){

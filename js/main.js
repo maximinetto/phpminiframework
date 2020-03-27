@@ -2,7 +2,6 @@ const urlAgregar = "http://localhost/tip/framework/pelicula/agregarFavorito/";
 const urlEliminar = "http://localhost/tip/framework/pelicula/eliminarFavorito/";
 
 function agregarFavorito(url, idVideo){
-    
 
     fetch(url + idVideo, {
         method: "GET",
@@ -12,6 +11,7 @@ function agregarFavorito(url, idVideo){
         },
     })
     .then(function(response){
+        console.log(response);
         return response.json();
     })
     .then(function(data){

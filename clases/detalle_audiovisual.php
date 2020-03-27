@@ -77,6 +77,15 @@ class DetallesAudioVisual
         
         return $resultados;
 
-	}
+    }
+    
+    static function getFavoritoByIdVideo($detalles,$idVideo){
+        
+        foreach ($detalles as $detalle) {
+            if($detalle->getAudiovisual()->getIdVideo() === $idVideo){
+                return $detalle->getAudiovisual();
+            }
+        }
+    }
 
 }

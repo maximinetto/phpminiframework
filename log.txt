@@ -100,3 +100,72 @@ Thu Mar 26 '20 09.00 PM &raquo; peticion ajax agregar
 Thu Mar 26 '20 09.00 PM &raquo; Parametro: tt0110912
 Thu Mar 26 '20 09.00 PM &raquo; Json: {"idVideo":"tt0110912"}
 Thu Mar 26 '20 09.00 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.08 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.08 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.11 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.11 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.12 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.12 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.16 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.16 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.16 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.16 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.17 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.17 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.17 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.17 PM &raquo; tt0110912
+Fri Mar 27 '20 06.17 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.18 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.18 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.19 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.19 PM &raquo; 
+Fri Mar 27 '20 06.19 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.22 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.22 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.31 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.31 PM &raquo; 0
+Fri Mar 27 '20 06.31 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.34 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.34 PM &raquo; 0
+Fri Mar 27 '20 06.34 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.36 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.36 PM &raquo; 0
+Fri Mar 27 '20 06.36 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.37 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.37 PM &raquo; 0
+Fri Mar 27 '20 06.37 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.37 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.37 PM &raquo; 0
+Fri Mar 27 '20 06.37 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.44 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.44 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.44 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.44 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.45 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.45 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.47 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.47 PM &raquo; 
+Fri Mar 27 '20 06.47 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.47 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.47 PM &raquo; 
+Fri Mar 27 '20 06.47 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.48 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.48 PM &raquo; 0
+Fri Mar 27 '20 06.48 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.49 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.49 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.50 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.50 PM &raquo; 0
+Fri Mar 27 '20 06.50 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.53 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.53 PM &raquo; 0
+Fri Mar 27 '20 06.53 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.58 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 06.58 PM &raquo; 0
+Fri Mar 27 '20 06.58 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 06.59 PM &raquo; 10
+Fri Mar 27 '20 07.06 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 07.06 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}
+Fri Mar 27 '20 07.08 PM &raquo; peticion ajax agregar
+Fri Mar 27 '20 07.08 PM &raquo; 0
+Fri Mar 27 '20 07.08 PM &raquo; Json: {"ok":false,"message":"Hubo un problema"}

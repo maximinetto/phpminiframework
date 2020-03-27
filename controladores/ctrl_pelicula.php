@@ -17,11 +17,11 @@ class ControladorPelicula extends ControladorIndex
 {
 	private $listado, $log;
 
-
 	function __construct()
 	{
 		$this->listado = new AudioVisualListado();
 		$this->log = Logger::defaultLog();
+
 	}
 
 	function listado($params = array())
@@ -42,6 +42,9 @@ class ControladorPelicula extends ControladorIndex
 		}
 
 		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
+
+		var_dump("hola");
+		Session::set("detalles", $detalles);
 
 		//Llamar a la vista
 		$tpl = Template::getInstance();
@@ -82,9 +85,10 @@ class ControladorPelicula extends ControladorIndex
 		//Llamar a la vista
 		//require_once("vistas/peliculas_listado.php");
 
-		$this->log->getLog();
-
+		
 		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
+
+		Session::set("detalles", $detalles);
 
 		//Llamar a la vista
 		$tpl = Template::getInstance();
@@ -118,33 +122,81 @@ class ControladorPelicula extends ControladorIndex
 
 	function agregarFavorito($params = array()){
 		$this->log->putLog("peticion ajax agregar");
-		$idVideo = $params[0];
-		$this->log->putLog("Parametro: $idVideo");
+		$audiovisual = $this->getAudioVisual($params);
+		$usuario = $this->getUsuario();
+		if(isset($audiovisual)){
+			$res = $this->guardarFavorito($usuario, $audiovisual);
+		}
+		else{
+			$res = $this->respuestaError();
+		}
 
-		$res = array("idVideo" => $idVideo);
+		self::respuestaServidor($res);
+	}
+
+	function eliminarFavorito($params = array()){
+		$this->log->putLog("peticion ajax eliminar favorito");
+		$audiovisual = self::getAudioVisual($params);
+		$usuario = self::getUsuario();
+		if(isset($audiovisual)){
+			$res = self::borrarFavorito($usuario, $audiovisual);
+		}
+		else{
+			$res = self::respuestaError();
+		}
+
+		self::respuestaServidor($res);
+	}
+
+	private function getUsuario(){
+		$usuario = new Usuario();
+		$idUsuario = Session::get("usuario_id");
+		$usuario = $usuario->getUsuarioByID($idUsuario);
+		return $usuario;
+	}
+
+	private function favoritos(){
+		
+		$usuario = self::getUsuario();
+		$favoritos = UsuarioServiceFactory::createService()
+					  ->listadoFavoritosPorUsuario($usuario);
+	    return $favoritos;
+	}
+
+	private function getAudioVisual($params){
+		$idVideo = $params[0];
+		$detalles = Session::get("detalles");
+		$this->log->putLog(sizeof($detalles));
+		return DetallesAudioVisual::getFavoritoByIdVideo($detalles, $idVideo);	
+	}
+
+	private function respuestaServidor($res){
 		header('Content-Type: application/json');
 		$res = json_encode($res, true);
 		$this->log->putLog("Json: $res");
 		echo $res;
 	}
 
-	function eliminarFavorito($params = array()){
-		$this->log->putLog("peticion ajax agregar");
-		$idVideo = $params[0];
+	private function respuestaError(){
+		return array(
+			"ok" => false, 
+		"message" => "Hubo un problema");
 
-		header('Content-Type: application/json');
-		$json = json_encode($idVideo, true);
-		echo $json;
 	}
 
-	private function favoritos(){
-		
-		$usuario = new Usuario();
-		$idUsuario = Session::get("usuario_id");
-		$usuario = $usuario->getUsuarioByID($idUsuario);
-		$favoritos = UsuarioServiceFactory::createService()
-					  ->listadoFavoritosPorUsuario($usuario);
-	    return $favoritos;
+	private function guardarFavorito($usuario, $audiovisual){
+		UsuarioServiceFactory::createService()->salvarFavorito($usuario, array($audiovisual));
+		return array(
+				"ok" => true, 
+			"message" => "Se ha guardado exitosamente");
+
+	}
+
+	private function borrarFavorito($usuario, $audiovisual){
+		UsuarioServiceFactory::createService()->borrarFavorito($usuario, $audiovisual);
+		return array(
+			"ok" => true, 
+		"message" => "Se ha guardado exitosamente");
 	}
 
 	
