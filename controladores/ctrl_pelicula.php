@@ -6,6 +6,10 @@ require "clases/detalle_audiovisual.php";
 require "clases/service/audiovisual_listado.php";
 require "clases/service/usuario/usuario_fabrica.php";
 require "clases/helpers/audiovisual_converter.php";
+require "clases/helpers/accion_favorito.php";
+require "clases/helpers/agregar_favorito.php";
+require "clases/helpers/quitar_favorito.php";
+
 require_once('clases/template.php');
 require_once('clases/session.php');
 require_once('clases/auth.php');
@@ -33,18 +37,22 @@ class ControladorPelicula extends ControladorIndex
 		$mensaje = "";
 		$peliculas = array();
 		$favoritos = array();
-		
-		if (!empty($params)) {
-			
-		} else {
+		$errorMensage = "";
+
+		try{
 			$peliculas = $this->listado->busquedaPorDefecto();
-			$favoritos = $this->favoritos();
+
 		}
+		catch(ErrorException $error){
+			$errorMensage = $error->getMessage();
+		}
+
+		$favoritos = $this->favoritos();
+		
 
 		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
 		
-		Session::set("detalles", $detalles);
-
+	
 		//Llamar a la vista
 		$tpl = Template::getInstance();
 		$datos = array(
@@ -52,6 +60,7 @@ class ControladorPelicula extends ControladorIndex
 			'buscar' => $buscar,
 			'titulo' => $titulo,
 			'mensaje' => $mensaje,
+			'error' => $errorMensage
 		);
 
 		$tpl->mostrar('peliculas_listado', $datos);
@@ -68,17 +77,30 @@ class ControladorPelicula extends ControladorIndex
 		$mensaje = "";
 		$peliculas = array();
 		$favoritos = array();
+		$errorMensage = ""; 
 
 		if (isset($_POST["buscar"]) && $_POST["buscar"] != "") {
 			$titulo = "Buscando..";
 			$buscar = urlencode($_POST['buscar']);
 			$this->log->putLog($buscar);
-			$peliculas = $this->listado->buscarPorNombre($buscar);
-			$favoritos = $this->favoritos();
+			try{
+				$peliculas = $this->listado->buscarPorNombre($buscar);
+				$favoritos = $this->favoritos();
+				$this->log->putLog("Busqueda con criterios");
+			}
+			catch(ErrorException $error){
+			 $errorMensage = $error->getMessage();
+			}
 		} else {
-			$peliculas = $this->listado->busquedaPorDefecto();
-			$favoritos = $this->favoritos();
-			$this->log->putLog("Busqueda por defecto");
+			try{
+				$peliculas = $this->listado->busquedaPorDefecto();
+				$favoritos = $this->favoritos();
+				$this->log->putLog("Busqueda por defecto");
+	
+			}
+			catch(ErrorException $error){
+				$errorMensage = $error->getMessage();
+			}
 		}
 
 		//Llamar a la vista
@@ -96,6 +118,7 @@ class ControladorPelicula extends ControladorIndex
 			'buscar' => $buscar,
 			'titulo' => $titulo,
 			'mensaje' => $mensaje,
+			'error' => $errorMensage
 		);
 
 		$tpl->mostrar('peliculas_listado', $datos);
@@ -121,30 +144,27 @@ class ControladorPelicula extends ControladorIndex
 
 	function agregarFavorito($params = array()){
 		Session::init();
+		$accionFavorito = new AgregarFavorito();
 		$this->log->putLog("peticion ajax agregar");
-		$audiovisual = $this->getAudioVisual($params);
-		$usuario = self::getUsuario();
-		$this->log->putLog($usuario);
-		if(isset($audiovisual)){
-			$res = $this->guardarFavorito($usuario, $audiovisual);
-		}
-		else{
-			$res = $this->respuestaError();
-		}
-
-		self::respuestaServidor($res);
+		$this->accionFavorito($params, $accionFavorito);
 	}
 
 	function eliminarFavorito($params = array()){
 		Session::init();
 		$this->log->putLog("peticion ajax eliminar favorito");
-		$audiovisual = self::getAudioVisual($params);
+		$accionFavorito = new BorrarFavorito();
+		$this->accionFavorito($params, $accionFavorito);
+	}
+
+	private function accionFavorito($params, AccionFavorito $accion){
+		$audiovisual = $this->getAudioVisual($params);
 		$usuario = self::getUsuario();
+		$this->log->putLog($usuario);
 		if(isset($audiovisual)){
-			$res = self::borrarFavorito($usuario, $audiovisual);
+			$res = $accion->aplicar($usuario, $audiovisual);
 		}
 		else{
-			$res = self::respuestaError();
+			$res = $this->respuestaError();
 		}
 
 		self::respuestaServidor($res);

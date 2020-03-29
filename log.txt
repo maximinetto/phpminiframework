@@ -616,3 +616,242 @@ Fri Mar 27 '20 08.37 PM &raquo; Json: {"ok":true,"message":"Se ha borrado exitos
 Fri Mar 27 '20 08.37 PM &raquo; peticion ajax eliminar favorito
 Fri Mar 27 '20 08.37 PM &raquo; Id usuario: 28
 Fri Mar 27 '20 08.37 PM &raquo; Json: {"ok":true,"message":"Se ha borrado exitosamente"}
+Sun Mar 29 '20 08.59 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 08.59 PM &raquo; Pelicula
+Sun Mar 29 '20 08.59 PM &raquo; Pelicula
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; series
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; Entra en buscar
+Sun Mar 29 '20 08.59 PM &raquo; harry
+Sun Mar 29 '20 08.59 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 08.59 PM &raquo; Pelicula
+Sun Mar 29 '20 08.59 PM &raquo; Pelicula
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; movie
+Sun Mar 29 '20 08.59 PM &raquo; peticion ajax agregar
+Sun Mar 29 '20 08.59 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 08.59 PM &raquo; Maxi Minetto 47725190
+Sun Mar 29 '20 08.59 PM &raquo; Maxi Minetto 47725190
+Sun Mar 29 '20 08.59 PM &raquo; TITULO: Harry Potter and the Deathly Hallows: Part 2, ID: tt1201607
+Sun Mar 29 '20 08.59 PM &raquo; Json: {"ok":true,"message":"Se ha guardado exitosamente"}
+Sun Mar 29 '20 09.00 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.00 PM &raquo; star+swa
+Sun Mar 29 '20 09.00 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.00 PM &raquo; Pelicula
+Sun Mar 29 '20 09.00 PM &raquo; Pelicula
+Sun Mar 29 '20 09.00 PM &raquo; Pelicula
+Sun Mar 29 '20 09.00 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.00 PM &raquo; star+wa
+Sun Mar 29 '20 09.00 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.00 PM &raquo; Pelicula
+Sun Mar 29 '20 09.00 PM &raquo; Pelicula
+Sun Mar 29 '20 09.00 PM &raquo; Pelicula
+Sun Mar 29 '20 09.00 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.00 PM &raquo; sd
+Sun Mar 29 '20 09.00 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.00 PM &raquo; Pelicula
+Sun Mar 29 '20 09.00 PM &raquo; Pelicula
+Sun Mar 29 '20 09.00 PM &raquo; Pelicula
+Sun Mar 29 '20 09.02 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.02 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.02 PM &raquo; Pelicula
+Sun Mar 29 '20 09.02 PM &raquo; Pelicula
+Sun Mar 29 '20 09.02 PM &raquo; Pelicula
+Sun Mar 29 '20 09.02 PM &raquo; Busqueda por defecto
+Sun Mar 29 '20 09.02 PM &raquo; Array
+Sun Mar 29 '20 09.02 PM &raquo; movie
+Sun Mar 29 '20 09.02 PM &raquo; movie
+Sun Mar 29 '20 09.02 PM &raquo; movie
+Sun Mar 29 '20 09.02 PM &raquo; movie
+Sun Mar 29 '20 09.02 PM &raquo; movie
+Sun Mar 29 '20 09.02 PM &raquo; movie
+Sun Mar 29 '20 09.02 PM &raquo; series
+Sun Mar 29 '20 09.02 PM &raquo; movie
+Sun Mar 29 '20 09.02 PM &raquo; movie
+Sun Mar 29 '20 09.02 PM &raquo; movie
+Sun Mar 29 '20 09.03 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.03 PM &raquo; star+sw
+Sun Mar 29 '20 09.03 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.03 PM &raquo; Pelicula
+Sun Mar 29 '20 09.03 PM &raquo; Pelicula
+Sun Mar 29 '20 09.03 PM &raquo; Pelicula
+Sun Mar 29 '20 09.03 PM &raquo; Movie not found!
+Sun Mar 29 '20 09.04 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.04 PM &raquo; sd
+Sun Mar 29 '20 09.04 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.04 PM &raquo; Pelicula
+Sun Mar 29 '20 09.04 PM &raquo; Pelicula
+Sun Mar 29 '20 09.04 PM &raquo; Pelicula
+Sun Mar 29 '20 09.04 PM &raquo; Audiovisuales:Too many results.
+Sun Mar 29 '20 09.04 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.04 PM &raquo; star+sw
+Sun Mar 29 '20 09.04 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.04 PM &raquo; Pelicula
+Sun Mar 29 '20 09.04 PM &raquo; Pelicula
+Sun Mar 29 '20 09.04 PM &raquo; Pelicula
+Sun Mar 29 '20 09.04 PM &raquo; Audiovisuales:Movie not found!
+Sun Mar 29 '20 09.07 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.07 PM &raquo; Pelicula
+Sun Mar 29 '20 09.07 PM &raquo; Pelicula
+Sun Mar 29 '20 09.07 PM &raquo; Pelicula
+Sun Mar 29 '20 09.07 PM &raquo; Audiovisuales:Array
+Sun Mar 29 '20 09.07 PM &raquo; movie
+Sun Mar 29 '20 09.07 PM &raquo; movie
+Sun Mar 29 '20 09.07 PM &raquo; movie
+Sun Mar 29 '20 09.07 PM &raquo; movie
+Sun Mar 29 '20 09.07 PM &raquo; movie
+Sun Mar 29 '20 09.07 PM &raquo; movie
+Sun Mar 29 '20 09.07 PM &raquo; series
+Sun Mar 29 '20 09.07 PM &raquo; movie
+Sun Mar 29 '20 09.07 PM &raquo; movie
+Sun Mar 29 '20 09.07 PM &raquo; movie
+Sun Mar 29 '20 09.07 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.07 PM &raquo; sd
+Sun Mar 29 '20 09.13 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.13 PM &raquo; sd
+Sun Mar 29 '20 09.13 PM &raquo; Audiovisuales:Array
+Sun Mar 29 '20 09.17 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.17 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.17 PM &raquo; Pelicula
+Sun Mar 29 '20 09.17 PM &raquo; Pelicula
+Sun Mar 29 '20 09.17 PM &raquo; Pelicula
+Sun Mar 29 '20 09.17 PM &raquo; Busqueda por defecto
+Sun Mar 29 '20 09.17 PM &raquo; movie
+Sun Mar 29 '20 09.17 PM &raquo; movie
+Sun Mar 29 '20 09.17 PM &raquo; movie
+Sun Mar 29 '20 09.17 PM &raquo; movie
+Sun Mar 29 '20 09.17 PM &raquo; movie
+Sun Mar 29 '20 09.17 PM &raquo; movie
+Sun Mar 29 '20 09.17 PM &raquo; series
+Sun Mar 29 '20 09.17 PM &raquo; movie
+Sun Mar 29 '20 09.17 PM &raquo; movie
+Sun Mar 29 '20 09.17 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.18 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.18 PM &raquo; Pelicula
+Sun Mar 29 '20 09.18 PM &raquo; Pelicula
+Sun Mar 29 '20 09.18 PM &raquo; Pelicula
+Sun Mar 29 '20 09.18 PM &raquo; Busqueda por defecto
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; series
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.18 PM &raquo; star+sw
+Sun Mar 29 '20 09.18 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.18 PM &raquo; sd
+Sun Mar 29 '20 09.18 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.18 PM &raquo; star+wars
+Sun Mar 29 '20 09.18 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.18 PM &raquo; Pelicula
+Sun Mar 29 '20 09.18 PM &raquo; Pelicula
+Sun Mar 29 '20 09.18 PM &raquo; Pelicula
+Sun Mar 29 '20 09.18 PM &raquo; Busqueda con criterios
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; movie
+Sun Mar 29 '20 09.18 PM &raquo; peticion ajax agregar
+Sun Mar 29 '20 09.18 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.18 PM &raquo; Maxi Minetto 47725190
+Sun Mar 29 '20 09.18 PM &raquo; Maxi Minetto 47725190
+Sun Mar 29 '20 09.18 PM &raquo; TITULO: Star Wars: Episode VI - Return of the Jedi, ID: tt0086190
+Sun Mar 29 '20 09.18 PM &raquo; Json: {"ok":true,"message":"Se ha guardado exitosamente"}
+Sun Mar 29 '20 09.18 PM &raquo; peticion ajax eliminar favorito
+Sun Mar 29 '20 09.18 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.18 PM &raquo; Maxi Minetto 47725190
+Sun Mar 29 '20 09.18 PM &raquo; Maxi Minetto 47725190
+Sun Mar 29 '20 09.18 PM &raquo; TITULO: Star Wars: Episode VI - Return of the Jedi, ID: tt0086190
+Sun Mar 29 '20 09.18 PM &raquo; Json: {"ok":true,"message":"Se ha borrado exitosamente"}
+Sun Mar 29 '20 09.18 PM &raquo; peticion ajax agregar
+Sun Mar 29 '20 09.18 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.18 PM &raquo; Maxi Minetto 47725190
+Sun Mar 29 '20 09.18 PM &raquo; Maxi Minetto 47725190
+Sun Mar 29 '20 09.18 PM &raquo; TITULO: Star Wars: Episode VI - Return of the Jedi, ID: tt0086190
+Sun Mar 29 '20 09.18 PM &raquo; Json: {"ok":true,"message":"Se ha guardado exitosamente"}
+Sun Mar 29 '20 09.18 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.18 PM &raquo; harry+pott
+Sun Mar 29 '20 09.19 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.19 PM &raquo; harry+potter
+Sun Mar 29 '20 09.19 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Busqueda con criterios
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; game
+Sun Mar 29 '20 09.19 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; series
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; Entra en buscar
+Sun Mar 29 '20 09.19 PM &raquo; harry
+Sun Mar 29 '20 09.19 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Pelicula
+Sun Mar 29 '20 09.19 PM &raquo; Busqueda con criterios
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.19 PM &raquo; movie
+Sun Mar 29 '20 09.20 PM &raquo; peticion ajax eliminar favorito
+Sun Mar 29 '20 09.20 PM &raquo; Id usuario: 29
+Sun Mar 29 '20 09.20 PM &raquo; Maxi Minetto 47725190
+Sun Mar 29 '20 09.20 PM &raquo; Maxi Minetto 47725190
+Sun Mar 29 '20 09.20 PM &raquo; TITULO: Harry Potter and the Deathly Hallows: Part 2, ID: tt1201607
+Sun Mar 29 '20 09.20 PM &raquo; Json: {"ok":true,"message":"Se ha borrado exitosamente"}

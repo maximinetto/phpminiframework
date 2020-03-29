@@ -28,6 +28,10 @@
             <div class="alert alert-danger" role="alert">{$mensaje}</div>
           {/if}
 
+          {if $error != ""}
+            <div class="alert alert-danger" role="alert">{$error}</div>
+          {/if}
+
           <div class="row">
             {foreach from=$detalles item=detalle key=key}
             <div class="col">

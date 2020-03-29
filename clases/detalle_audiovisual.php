@@ -53,7 +53,7 @@ class DetallesAudioVisual
     }
 
     static function ponerFavoritoPelicula($favoritos, $audiovisuales){
-
+        $log = Logger::defaultLog();
 		$resultados = array();
 		foreach($audiovisuales as $audio){
             $audio = FactoryAudioVisual::getAudiovisual($audio["Type"], $audio);

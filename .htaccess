@@ -1,6 +1,10 @@
+
+php_flag display_startup_errors on
+php_flag display_errors on
+
 # Activamos el rewrite
 RewriteEngine On
- 
+
 # Definimos el path del proyecto
 RewriteBase /tip/framework/
  
@@ -20,4 +24,3 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Rewrite all other URLs to index.php/URL
 RewriteRule ^(.*)$ index.php?url=$1 [L] 
-

@@ -11,7 +11,7 @@
             ]);
             $json_response = json_decode($response->getBody(), true);
             if(isset($json_response["Error"])){
-                return $json_response["Error"];
+                throw new ErrorException($json_response["Error"]);
             }
             else{
                 $films = $json_response["Search"];
@@ -26,7 +26,7 @@
             ]);
             $json_response = json_decode($response->getBody(), true);
             if(isset($json_response["Error"])){
-                return $json_response["Error"];
+                throw new ErrorException($json_response["Error"]);
             }
             else{
                 $films = $json_response["Search"];
