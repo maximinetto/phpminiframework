@@ -17,17 +17,63 @@ class VerRepository extends ClaseBase {
 
     }
 
+    public function listarPorId(){
+        $id_usuario=$this->getIdUsuario();
+        $id_pelicula=$this->getIdPelicula();
+        
+        $stmt = $this->getDB()->prepare(
+            "SELECT * FROM para_ver "
+            . " WHERE id_usuario = ? AND imdbID = ?"
+        );
+
+        $stmt->bind_param("is", $id_usuario, $id_pelicula);
+
+        $success = $stmt->execute();
+        
+        if(!$success)
+            throw new ErrorException("Hubo un error en la consulta");
+
+        $data = $stmt->get_result()->fetch_assoc();
+        
+        if(isset($data["tipo"])){
+            $this->tipo = $data["tipo"];
+        }    
+
+        return $data;    
+    }
+
+    public function listarPorIdUsuario(){
+        $id_usuario=$this->getIdUsuario();
+        
+        $stmt = $this->getDB()->prepare(
+            "SELECT * FROM para_ver "
+            . " WHERE id_usuario = ?"
+        );
+
+        $stmt->bind_param("i", $id_usuario);
+
+        $success = $stmt->execute();
+        
+        if(!$success)
+            throw new ErrorException("Hubo un error en la consulta");
+
+        $data = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);    
+
+        return $data;    
+    }
+
     public function agregar(){
         
         $id_usuario=$this->getIdUsuario();
         $id_pelicula=$this->getIdPelicula();
         $tipo = $this->getTipo();
 
-        $log = Logger::defaultLog();
+        $data = $this->listarPorId();
 
-        $log->putLog("Usuario: " . $id_usuario);
-        $log->putLog("Pelicula: " . $id_pelicula);
-        $log->putLog("Tipo: " . $tipo);
+        if(isset($data["tipo"]))
+        {
+            return true;
+        }
 
         $stmt = $this->getDB()->prepare( 
             "INSERT INTO para_ver 
@@ -40,6 +86,28 @@ class VerRepository extends ClaseBase {
 
         return $stmt->execute();
     
+    }
+
+    public function borrarMasTarde(){
+        $id_usuario=$this->getIdUsuario();
+        $id_pelicula=$this->getIdPelicula();
+
+        $log = Logger::defaultLog();
+
+        $log->putLog("IDUSUARIO: " . $id_usuario);
+        $log->putLog("IDPELICULA: " . $id_pelicula);
+
+        $stmt = $this->getDB()->prepare( 
+            "DELETE FROM para_ver " .
+             " WHERE " . 
+             " id_usuario = ? AND imdbID = ? " );
+
+        $stmt->bind_param("is",
+        $id_usuario,
+            $id_pelicula);
+
+        return $stmt->execute();
+        
     }
    
     public function getIdUsuario() {

@@ -1345,3 +1345,143 @@ Mon Mar 30 '20 02.21 PM &raquo; Agregar a más tarde
 Mon Mar 30 '20 02.21 PM &raquo; Usuario: 29
 Mon Mar 30 '20 02.21 PM &raquo; Pelicula: tt3265262
 Mon Mar 30 '20 02.21 PM &raquo; Tipo: Pelicula
+Mon Mar 30 '20 04.00 PM &raquo; Entra en buscar
+Mon Mar 30 '20 04.00 PM &raquo; star
+Mon Mar 30 '20 04.00 PM &raquo; Id usuario: 29
+Mon Mar 30 '20 04.00 PM &raquo; Pelicula
+Mon Mar 30 '20 04.00 PM &raquo; Pelicula
+Mon Mar 30 '20 04.00 PM &raquo; Pelicula
+Mon Mar 30 '20 04.00 PM &raquo; Busqueda con criterios
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; Entra en buscar
+Mon Mar 30 '20 04.00 PM &raquo; star
+Mon Mar 30 '20 04.00 PM &raquo; Id usuario: 29
+Mon Mar 30 '20 04.00 PM &raquo; Pelicula
+Mon Mar 30 '20 04.00 PM &raquo; Pelicula
+Mon Mar 30 '20 04.00 PM &raquo; Pelicula
+Mon Mar 30 '20 04.00 PM &raquo; Busqueda con criterios
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; movie
+Mon Mar 30 '20 04.00 PM &raquo; Agregar a más tarde
+Mon Mar 30 '20 04.01 PM &raquo; Agregar a más tarde
+Mon Mar 30 '20 04.02 PM &raquo; Agregar a más tarde
+Mon Mar 30 '20 04.02 PM &raquo; Entra en buscar
+Mon Mar 30 '20 04.02 PM &raquo; star
+Mon Mar 30 '20 04.02 PM &raquo; Id usuario: 29
+Mon Mar 30 '20 04.02 PM &raquo; Pelicula
+Mon Mar 30 '20 04.02 PM &raquo; Pelicula
+Mon Mar 30 '20 04.02 PM &raquo; Pelicula
+Mon Mar 30 '20 04.02 PM &raquo; Busqueda con criterios
+Mon Mar 30 '20 04.02 PM &raquo; movie
+Mon Mar 30 '20 04.02 PM &raquo; movie
+Mon Mar 30 '20 04.02 PM &raquo; movie
+Mon Mar 30 '20 04.02 PM &raquo; movie
+Mon Mar 30 '20 04.02 PM &raquo; movie
+Mon Mar 30 '20 04.02 PM &raquo; movie
+Mon Mar 30 '20 04.02 PM &raquo; movie
+Mon Mar 30 '20 04.02 PM &raquo; movie
+Mon Mar 30 '20 04.02 PM &raquo; movie
+Mon Mar 30 '20 04.02 PM &raquo; movie
+Mon Mar 30 '20 04.02 PM &raquo; Agregar a más tarde
+Mon Mar 30 '20 04.02 PM &raquo; Agregar a más tarde
+Mon Mar 30 '20 04.11 PM &raquo; Agregar a más tarde
+Mon Mar 30 '20 04.12 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.12 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.14 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.14 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.14 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.14 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.14 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.14 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.17 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.17 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.17 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.17 PM &raquo; [29,"tt0080684","Pelicula"]
+Mon Mar 30 '20 04.19 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.19 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.19 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.19 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.19 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.20 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.20 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.20 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.20 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.20 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.22 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.22 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.22 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.22 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.22 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.31 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.31 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.31 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.31 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.31 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.33 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.33 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.33 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.33 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.33 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.34 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.34 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.34 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.34 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.34 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.37 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.37 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.37 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.37 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.37 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.38 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.38 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.38 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.38 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.38 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.38 PM &raquo; tt0080684
+Mon Mar 30 '20 04.46 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.46 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.46 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.46 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.46 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.46 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.46 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.46 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.46 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.46 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.48 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.48 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.48 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.48 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.48 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.48 PM &raquo; tt3265262
+Mon Mar 30 '20 04.48 PM &raquo; IDUSUARIO: 
+Mon Mar 30 '20 04.48 PM &raquo; IDPELICULA: tt3265262
+Mon Mar 30 '20 04.48 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.48 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.48 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.48 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Mon Mar 30 '20 04.48 PM &raquo; {"id_usuario":29,"imdbID":"tt3265262","tipo":"Pelicula"}
+Mon Mar 30 '20 04.51 PM &raquo; tt3265262
+Mon Mar 30 '20 04.51 PM &raquo; IDUSUARIO: 29
+Mon Mar 30 '20 04.51 PM &raquo; IDPELICULA: tt3265262
+Mon Mar 30 '20 04.51 PM &raquo; ver más tarde
+Mon Mar 30 '20 04.51 PM &raquo; ID_USUARIO: 29
+Mon Mar 30 '20 04.51 PM &raquo; SESSION_ID: 29
+Mon Mar 30 '20 04.51 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}

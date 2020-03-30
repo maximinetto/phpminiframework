@@ -14,9 +14,22 @@ class PeliculaService {
         $this->peliculaListado = new PeliculaListado($params);
     }
 
+    public function verSiHayMasTarde(){
+        return $this->peliculaListado->getPeliculaVerMasTarde();
+    }
+
+    public function peliculasMasTardeUsuario(){
+        return $this->peliculaListado->peliculasVerMasTardeUsuario();
+    }
+
     public function agregarMasTarde(){
         return $this->peliculaSalvar->agregarMasTarde();
     }
+
+    public function borrarVerMasTarde(){
+        return $this->peliculaSalvar->borrarVerMasTarde();
+    }
+
 
    
 }

@@ -4,9 +4,9 @@ require_once 'config/log.php';
 
 abstract class AudioVisual extends ClaseBase
 {
-    private $idVideo, $title, $director, $poster, $year;
-    private $actors;
-    private $runtime, $ratings, $genre;
+    public $idVideo, $title, $director, $poster, $year;
+    public $actors;
+    public $runtime, $ratings, $genre;
 
     public function __construct(array $attributes)
     {

@@ -104,8 +104,6 @@ class ControladorPelicula extends ControladorIndex
 
 		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
 
-		Session::set("detalles", $detalles);
-
 		//Llamar a la vista
 		$tpl = Template::getInstance();
 		$datos = array(
@@ -121,8 +119,18 @@ class ControladorPelicula extends ControladorIndex
 
 	function detalles($params = array())
 	{
+
+		Session::init();
+		
 		$idVideo = $params[0];
 		$this->log->putLog($idVideo);
+		$params = array(
+				"imdbID" => $idVideo,
+				"id_usuario" => Session::get('usuario_id')
+		);
+
+		PeliculaServiceFactory::createService($params)->borrarVerMasTarde();
+
 		$converter = new AudioVisualConverter();
 		$audiovisual = $converter($idVideo);
 
@@ -174,8 +182,48 @@ class ControladorPelicula extends ControladorIndex
 		
 		}
 
-		echo json_encode(array("res" => $res, "msj" => $mensaje));
+		echo json_encode(array("res" => $res, "mensaje" => $mensaje));
 		exit;
+	}
+
+	function ver_peliculas_mas_tarde(){
+		$mensaje = "";
+		Session::init();
+
+		$this->log->putLog("ver más tarde");
+	
+		$idUsuario = $_POST["id_usuario"];
+
+		$this->log->putLog("ID_USUARIO: " . $idUsuario);
+		$this->log->putLog("SESSION_ID: " . Session::get("usuario_id"));
+		if(!(isset($idUsuario) && $idUsuario == Session::get("usuario_id"))){
+			$respuesta = json_encode(
+				array(
+					"mensaje" => "Error en la llamada", 
+					"ok" => false,
+					"films" => []
+				));
+			
+			echo $respuesta;
+			exit;		
+		}
+
+		$params =
+		array(
+			"id_usuario" => Session::get('usuario_id')
+		);
+
+		$audiovisuales = PeliculaServiceFactory::createService($params)->peliculasMasTardeUsuario();
+		
+		$respuesta = json_encode(
+			array(
+				"mensaje" => "Se ha ejecutado correctamente", 
+				"ok" => true,
+				"films" => $audiovisuales
+			));
+		
+		echo $respuesta;
+		exit;	
 	}
 
 	function agregarFavorito($params = array())
