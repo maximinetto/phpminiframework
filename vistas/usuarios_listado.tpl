@@ -13,16 +13,12 @@
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/funciones.js"></script>
-    
-    
+        
   </head>
 
   <body>
     {include file="cabezal.tpl"}
+    {include file="lista_para_ver.tpl"}
     <div class="container-fluid">
       <div class="row">
        
@@ -54,7 +50,7 @@
                     <td>{$persona->getEmail()}</td>
                     <td>
                       <input type="button" value="Borrar" class="btn btn-danger" onClick="window.location='{$url_base}usuario/listado/borrar/{$persona->getId()}/'"/>
-                     
+                     <input type="button" value="Para Ver" class="btn btn-info" onClick="javascript:cargarParaVer('{$persona->getId()}');"/>
                       
                     </td>
                   </tr>
@@ -71,6 +67,11 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
 
   </body>
 </html>

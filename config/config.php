@@ -18,4 +18,5 @@
         'config_dir' => 'libs/smarty/configs/',
         );
     define ("URL_BASE","/tip/framework/");
+    define("IP_ADDRESS", "localhost");
 ?>

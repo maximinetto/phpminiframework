@@ -5,8 +5,11 @@ require "controladores/ctrl_index.php";
 require_once('clases/template.php');
 $controlIndex=new ControladorIndex();
 
+$ipAddress = IP_ADDRESS;
+$url = "http://$ipAddress" . URL_BASE;
+
 $tpl = Template::getInstance();
-$tpl->asignar('url_base',"http://localhost/tip/framework/");
+$tpl->asignar('url_base', $url);
 $tpl->asignar('url_logout',$controlIndex->getUrl("usuario","logout"));
 $tpl->asignar('proyecto',"Apps Web");
 
