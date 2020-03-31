@@ -54,7 +54,12 @@
                       <input type="button" value="Borrar" class="btn btn-danger" onClick="window.location='{$url_base}usuario/listado/borrar/{$persona->getId()}/'"/>
                       <input type="button" value="Para Ver" class="btn btn-info" onClick="javascript:cargarParaVer('{$persona->getId()}');"/>   
                     </td>
-                    <td class="photo"> {$persona->getFoto()} </td>
+                    <td class="photo">
+                      {assign var="foto" value=$persona->getFoto()}
+                      {if $foto != ""}
+                        <img src="{$foto}" alt="foto {$persona->getNombre()}">  
+                      {/if} 
+                    </td>
                   </tr>
                 {/foreach}
               </tbody>

@@ -103,3 +103,15 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+/* User photos */
+.photo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo img {
+  height: 40px;
+  
+}
