@@ -86,7 +86,7 @@ function cargarParaVer(id_usuario) {
               html += `<a class="film-modal" href="/tip/framework/pelicula/detalles/${f.idVideo}">
               Título: ${f.title}</a>`;
         
-            });
+        });
 
         $(".modal-body").html(html);
         // Display Modal

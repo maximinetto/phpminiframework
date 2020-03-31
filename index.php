@@ -25,6 +25,7 @@ if(isset($_GET['url'])){
 	for ($i=2; $i <count($request) ; $i++) { 
 		$params[]=$request[$i];
 	}
+	
 }else{
 	$controller="usuario";
 	$action="listado";

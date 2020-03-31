@@ -8,6 +8,7 @@ class Usuario extends ClaseBase{
     public $ci = '';
 	public $edad = 0;
     public $email='';
+    public $foto='';
 
     private $peliculasFavoritas;
 
@@ -43,6 +44,11 @@ class Usuario extends ClaseBase{
     public function getEdad() {
         return $this->edad;
     }
+    
+    public function getFoto() {
+        return $this->foto;
+    }
+    
 
     public function setNombre($nombre){
         $this->nombre=$nombre;
@@ -66,6 +72,10 @@ class Usuario extends ClaseBase{
     
     public function setEdad($edad){
         $this->edad=$edad;
+    }
+
+    public function setFoto($foto){
+        $this->foto=$foto;
     }
 
     public function getPeliculasFavoritas(){
@@ -125,13 +135,15 @@ class Usuario extends ClaseBase{
         $ci=$this->getCI();
         $password = sha1("123456");
         $email=$this->getEmail();
+        $foto=$this->getFoto();
 
         $stmt = $this->getDB()->prepare( 
             "INSERT INTO usuarios 
-        (nombre, apellido,edad, ci, email,pass) 
-           VALUES (?,?,?,?,?,?)" );
-        $stmt->bind_param("ssisss",$nombre,
-            $ape,$edad,$ci,$email,$password);
+        (nombre, apellido, edad, ci, email, pass, foto) 
+           VALUES (?, ?, ?, ?, ?, ?, ?)" );
+
+        $stmt->bind_param("ssissss",$nombre,
+            $ape,$edad,$ci,$email,$password, $foto);
         return $stmt->execute();
     
     }
