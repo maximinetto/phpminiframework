@@ -138,6 +138,7 @@ class ControladorUsuario extends ControladorIndex
 			$pass = sha1($_POST["password"]);
 
 			if ($usr->login($email, $pass)) {
+				
 				$this->redirect("usuario", "listado");
 				exit;
 			} else {

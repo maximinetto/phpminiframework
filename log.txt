@@ -1485,3 +1485,6 @@ Mon Mar 30 '20 04.51 PM &raquo; ver más tarde
 Mon Mar 30 '20 04.51 PM &raquo; ID_USUARIO: 29
 Mon Mar 30 '20 04.51 PM &raquo; SESSION_ID: 29
 Mon Mar 30 '20 04.51 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pelicula"}
+Thu Apr 02 '20 05.44 PM &raquo; Foto: 
+Thu Apr 02 '20 06.20 PM &raquo; Foto: 
+Thu Apr 02 '20 06.23 PM &raquo; Foto: uploads/605609.jpg

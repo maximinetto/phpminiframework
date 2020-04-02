@@ -162,6 +162,7 @@ class Usuario extends ClaseBase{
         Session::set('usuario_id', $res->id);
         Session::set('usuario_nombre', $res->nombre);
         Session::set('usuario_email', $res->email);
+        Session::set("foto", $res->foto);
         return true;
     }
     
