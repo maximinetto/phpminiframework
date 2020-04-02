@@ -1,5 +1,15 @@
 <?php
+
+require_once("clases/helpers/url.php");    
+
 class ControladorIndex{
+
+    private $url;
+
+    function __construct()
+    {
+        $this->url = new URL();
+    }
 
     function cargarControlador($controller){
         $controlador='ctrl_'.$controller;
@@ -37,11 +47,7 @@ class ControladorIndex{
 
     public function getUrl($controlador="usuario",
         $accion="listado",$params=array()){
-        $url= URL_BASE.$controlador."/".$accion."/";
-        foreach ($params as $key => $value) {
-            $url.=$value."/";
-        }
-        return $url;
+        return $this->url->getUrl($controlador, $accion, $params);
     }
 }
 ?>

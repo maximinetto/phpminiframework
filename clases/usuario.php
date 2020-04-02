@@ -9,6 +9,7 @@ class Usuario extends ClaseBase{
 	public $edad = 0;
     public $email='';
     public $foto='';
+    private $password;
 
     private $peliculasFavoritas;
 
@@ -58,6 +59,10 @@ class Usuario extends ClaseBase{
         return $this->email;
     }
 
+    public function setId($idUsuario){
+        $this->id = $idUsuario;
+    }
+
     public function setEmail($email){
         $this->email=$email;
     }
@@ -76,6 +81,10 @@ class Usuario extends ClaseBase{
 
     public function setFoto($foto){
         $this->foto=$foto;
+    }
+
+    public function setPassword($password){
+        $this->password = $password;
     }
 
     public function getPeliculasFavoritas(){
@@ -147,6 +156,37 @@ class Usuario extends ClaseBase{
         return $stmt->execute();
     
     }
+
+    public function editar(){
+        
+        Session::init();
+        $log= Logger::defaultLog();
+        $idUsuario = Session::get('usuario_id');
+        $nombre=$this->getNombre();
+        $ape=$this->getApellido();
+        $edad=$this->getEdad();
+        $ci=$this->getCI();
+        $log->putLog("Password: " . $this->password);
+        $password = sha1($this->password);
+        $email=$this->getEmail();
+        $foto=$this->getFoto();
+
+        $log->putLog("Usuario: [$idUsuario, $nombre, $ape, $edad, $ci, $password, $email, $foto]");
+
+        $stmt = $this->getDB()->prepare( 
+            "UPDATE usuarios 
+            SET nombre = ?, apellido = ?, edad = ?, ci = ?, 
+                email = ?, pass= ?, foto = ? 
+            WHERE id = ?" );
+
+        $stmt->bind_param("ssissssi",$nombre,
+            $ape,$edad,$ci,$email,$password, $foto, $idUsuario);
+        return $stmt->execute();
+    
+    }
+
+
+
 
     public function login($email,$pass){
         $stmt = $this->getDB()->prepare( "SELECT * from  usuarios WHERE email=? AND pass=?" );

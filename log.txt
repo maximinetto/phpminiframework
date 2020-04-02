@@ -1488,3 +1488,163 @@ Mon Mar 30 '20 04.51 PM &raquo; {"id_usuario":29,"imdbID":"tt0080684","tipo":"Pe
 Thu Apr 02 '20 05.44 PM &raquo; Foto: 
 Thu Apr 02 '20 06.20 PM &raquo; Foto: 
 Thu Apr 02 '20 06.23 PM &raquo; Foto: uploads/605609.jpg
+Thu Apr 02 '20 07.35 PM &raquo; Id usuario: 30
+Thu Apr 02 '20 07.35 PM &raquo; movie
+Thu Apr 02 '20 07.35 PM &raquo; movie
+Thu Apr 02 '20 07.35 PM &raquo; movie
+Thu Apr 02 '20 07.35 PM &raquo; movie
+Thu Apr 02 '20 07.35 PM &raquo; movie
+Thu Apr 02 '20 07.35 PM &raquo; movie
+Thu Apr 02 '20 07.35 PM &raquo; series
+Thu Apr 02 '20 07.35 PM &raquo; movie
+Thu Apr 02 '20 07.35 PM &raquo; movie
+Thu Apr 02 '20 07.35 PM &raquo; movie
+Thu Apr 02 '20 08.07 PM &raquo; Url: /tip/framework/usuario/listado/
+Thu Apr 02 '20 08.11 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.12 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.12 PM &raquo; Url: /tip/framework/usuario/listado/
+Thu Apr 02 '20 08.13 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.14 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.25 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.29 PM &raquo; Url: /tip/framework/usuario/login/
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.30 PM &raquo; Entra: 
+Thu Apr 02 '20 08.31 PM &raquo; Entra: 
+Thu Apr 02 '20 08.31 PM &raquo; Entra: 
+Thu Apr 02 '20 08.31 PM &raquo; Entra: 
+Thu Apr 02 '20 08.32 PM &raquo; Entra: 
+Thu Apr 02 '20 08.32 PM &raquo; Entra: 
+Thu Apr 02 '20 08.32 PM &raquo; Id usuario: 29
+Thu Apr 02 '20 08.32 PM &raquo; Pelicula
+Thu Apr 02 '20 08.32 PM &raquo; Pelicula
+Thu Apr 02 '20 08.32 PM &raquo; Pelicula
+Thu Apr 02 '20 08.32 PM &raquo; movie
+Thu Apr 02 '20 08.32 PM &raquo; movie
+Thu Apr 02 '20 08.32 PM &raquo; movie
+Thu Apr 02 '20 08.32 PM &raquo; movie
+Thu Apr 02 '20 08.32 PM &raquo; movie
+Thu Apr 02 '20 08.32 PM &raquo; movie
+Thu Apr 02 '20 08.32 PM &raquo; series
+Thu Apr 02 '20 08.32 PM &raquo; movie
+Thu Apr 02 '20 08.32 PM &raquo; movie
+Thu Apr 02 '20 08.32 PM &raquo; movie
+Thu Apr 02 '20 08.32 PM &raquo; Entra: 
+Thu Apr 02 '20 08.32 PM &raquo; Entra: 
+Thu Apr 02 '20 08.32 PM &raquo; Entra: 
+Thu Apr 02 '20 08.32 PM &raquo; Entra: 
+Thu Apr 02 '20 08.33 PM &raquo; Entra: 
+Thu Apr 02 '20 08.34 PM &raquo; Entra: 
+Thu Apr 02 '20 08.34 PM &raquo; Entra: 
+Thu Apr 02 '20 08.35 PM &raquo; Entra: 
+Thu Apr 02 '20 08.35 PM &raquo; Entra: 
+Thu Apr 02 '20 08.35 PM &raquo; Entra: 
+Thu Apr 02 '20 08.37 PM &raquo; Entra: 
+Thu Apr 02 '20 08.37 PM &raquo; Entra: 
+Thu Apr 02 '20 08.41 PM &raquo; Entra: 
+Thu Apr 02 '20 08.43 PM &raquo; Entra: 
+Thu Apr 02 '20 08.43 PM &raquo; Entra: 
+Thu Apr 02 '20 08.43 PM &raquo; Entra: 
+Thu Apr 02 '20 08.45 PM &raquo; Entra: 
+Thu Apr 02 '20 08.46 PM &raquo; Entra: 
+Thu Apr 02 '20 08.49 PM &raquo; Entra: 
+Thu Apr 02 '20 09.11 PM &raquo; Entra: 
+Thu Apr 02 '20 09.11 PM &raquo; Id usuario: 30
+Thu Apr 02 '20 09.11 PM &raquo; movie
+Thu Apr 02 '20 09.11 PM &raquo; movie
+Thu Apr 02 '20 09.11 PM &raquo; movie
+Thu Apr 02 '20 09.11 PM &raquo; movie
+Thu Apr 02 '20 09.11 PM &raquo; movie
+Thu Apr 02 '20 09.11 PM &raquo; movie
+Thu Apr 02 '20 09.11 PM &raquo; series
+Thu Apr 02 '20 09.11 PM &raquo; movie
+Thu Apr 02 '20 09.11 PM &raquo; movie
+Thu Apr 02 '20 09.11 PM &raquo; movie
+Thu Apr 02 '20 09.11 PM &raquo; Entra: 
+Thu Apr 02 '20 09.11 PM &raquo; Entra: 
+Thu Apr 02 '20 09.11 PM &raquo; Entra: 
+Thu Apr 02 '20 09.28 PM &raquo; Entra: 
+Thu Apr 02 '20 09.33 PM &raquo; Entra: 
+Thu Apr 02 '20 09.35 PM &raquo; Entra: 
+Thu Apr 02 '20 09.35 PM &raquo; Entra: 
+Thu Apr 02 '20 09.40 PM &raquo; Entra: 
+Thu Apr 02 '20 10.33 PM &raquo; Entra: 
+Thu Apr 02 '20 10.34 PM &raquo; Entra: 
+Thu Apr 02 '20 10.35 PM &raquo; Entra: 
+Thu Apr 02 '20 10.37 PM &raquo; Entra: 
+Thu Apr 02 '20 10.37 PM &raquo; Entra: 
+Thu Apr 02 '20 10.37 PM &raquo; Entra: 
+Thu Apr 02 '20 10.40 PM &raquo; Entra: 
+Thu Apr 02 '20 10.46 PM &raquo; Entra: 
+Thu Apr 02 '20 11.35 PM &raquo; Entra: 
+Thu Apr 02 '20 11.38 PM &raquo; Entra: 
+Thu Apr 02 '20 11.42 PM &raquo; Entra: 
+Thu Apr 02 '20 11.42 PM &raquo; Entra: 
+Thu Apr 02 '20 11.43 PM &raquo; Entra: 
+Thu Apr 02 '20 11.43 PM &raquo; Entra: 
+Thu Apr 02 '20 11.48 PM &raquo; Entra: 
+Thu Apr 02 '20 11.48 PM &raquo; Entra: 
+Thu Apr 02 '20 11.48 PM &raquo; Entra: 
+Thu Apr 02 '20 11.50 PM &raquo; Entra: 
+Thu Apr 02 '20 11.50 PM &raquo; Entra: 
+Thu Apr 02 '20 11.50 PM &raquo; Entra: 
+Thu Apr 02 '20 11.55 PM &raquo; Entra: 
+Thu Apr 02 '20 11.55 PM &raquo; Usuario: [29, Maxi, Minetto, 25, 47725190, da39a3ee5e6b4b0d3255bfef95601890afd80709, maximinetto@gmail.com, uploads/614737.jpg]
+Thu Apr 02 '20 11.55 PM &raquo; Entra: 
+Fri Apr 03 '20 12.04 AM &raquo; Entra: 
+Fri Apr 03 '20 12.04 AM &raquo; Entra: 
+Fri Apr 03 '20 12.04 AM &raquo; Usuario: [29, Maximiliano, Minetto, 25, 47725190, da39a3ee5e6b4b0d3255bfef95601890afd80709, maximinetto@gmail.com, uploads/349832.jpg]
+Fri Apr 03 '20 12.04 AM &raquo; Entra: 
+Fri Apr 03 '20 12.05 AM &raquo; Entra: 
+Fri Apr 03 '20 12.05 AM &raquo; Entra: 
+Fri Apr 03 '20 12.10 AM &raquo; Entra: 
+Fri Apr 03 '20 12.13 AM &raquo; Entra: 
+Fri Apr 03 '20 12.14 AM &raquo; Entra: 
+Fri Apr 03 '20 12.14 AM &raquo; Password: 
+Fri Apr 03 '20 12.14 AM &raquo; Usuario: [29, Maximiliano, Minetto, 25, 47725190, da39a3ee5e6b4b0d3255bfef95601890afd80709, maximinetto@gmail.com, uploads/894401.jpg]
+Fri Apr 03 '20 12.14 AM &raquo; Entra: 
+Fri Apr 03 '20 12.16 AM &raquo; Entra: 
+Fri Apr 03 '20 12.18 AM &raquo; Entra: 
+Fri Apr 03 '20 12.18 AM &raquo; Password: maxi08041994
+Fri Apr 03 '20 12.18 AM &raquo; Usuario: [29, Maximiliano, Minetto, 25, 47725190, 82ad1631b99d733204cd7588a975a9f840605c22, maximinetto@gmail.com, uploads/832130.jpg]
+Fri Apr 03 '20 12.18 AM &raquo; Entra: 
+Fri Apr 03 '20 12.18 AM &raquo; Entra: 
+Fri Apr 03 '20 12.18 AM &raquo; Entra: 

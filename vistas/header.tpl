@@ -17,7 +17,7 @@
       <input 
         class="form-control mr-sm-2" 
         type="search" 
-        placeholder="Search" 
+        placeholder="Buscar" 
         aria-label="Search"
         id="buscar"
         name="buscar">

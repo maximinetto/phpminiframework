@@ -43,7 +43,6 @@ class ClaseBase{
         }
         return $res;
     }
-
     
     public function borrar($id){
     	$sql="DELETE FROM $this->tabla WHERE id=$id ";

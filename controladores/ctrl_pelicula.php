@@ -30,8 +30,6 @@ class ControladorPelicula extends ControladorIndex
 
 	function listado($params = array())
 	{
-		Auth::estaLogueado();
-
 		$buscar = "";
 		$titulo = "Listado";
 		$mensaje = "";
@@ -66,8 +64,6 @@ class ControladorPelicula extends ControladorIndex
 
 	function buscar($params = array())
 	{
-
-		Auth::estaLogueado();
 
 		$this->log->putLog("Entra en buscar");
 		$buscar = "";

@@ -9,6 +9,15 @@ body {
 
 
 /*
+ * Profile photo
+ */
+
+.profile-photo{
+  height: 30px;
+}
+
+
+/*
  * Global add-ons
  */
 
@@ -24,6 +33,35 @@ body {
 .navbar-fixed-top {
   border: 0;
 }
+
+/*
+* Navbar
+*/
+
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar .container-fluid .navbar-header{
+  flex: 1;
+}
+
+.navbar .container-fluid #navbar{
+  display: flex;
+  flex: 1;
+  justify-self: end;
+  justify-content: end;
+  align-items: center;
+}
+
+.navbar .container-fluid #navbar > .nav{
+  margin-left: 10px;
+}
+
 
 /*
  * Sidebar
@@ -111,7 +149,7 @@ body {
   margin: 0 auto;
 }
 
-/* User photos */
+/* Users photos */
 .photo{
   display: block;
   width: 100%;

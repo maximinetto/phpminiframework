@@ -1,7 +1,7 @@
 <?php
 require "clases/clase_base.php";
 require "clases/usuario.php";
-require_once('clases/template.php');
+require_once('clases/template_usuario.php');
 require_once('clases/session.php');
 require_once('clases/auth.php');
 require_once('clases/helpers/utils.php');
@@ -12,9 +12,7 @@ class ControladorUsuario extends ControladorIndex
 
 	function listado($params = array())
 	{
-
-		Auth::estaLogueado();
-
+		
 		$buscar = "";
 		$titulo = "Listado";
 		$mensaje = "";
@@ -41,24 +39,22 @@ class ControladorUsuario extends ControladorIndex
 			$usuario = new Usuario();
 			$usuarios = $usuario->getListado();
 		}
-
+		
+		$tpl = TemplateUser::getInstance();
 		//Llamar a la vista
-		$tpl = Template::getInstance();
 		$datos = array(
 			'usuarios' => $usuarios,
 			'buscar' => $buscar,
 			'titulo' => $titulo,
 			'mensaje' => $mensaje,
 		);
-		$tpl->asignar('usuario_nuevo', $this->getUrl("usuario", "nuevo"));
+		
 		$tpl->mostrar('usuarios_listado', $datos);
 	}
 	
 	function buscar($params = array())
 	{
-
-		Auth::estaLogueado();
-
+		
 		$buscar = "";
 		$titulo = "Listado";
 		$mensaje = "";
@@ -72,11 +68,11 @@ class ControladorUsuario extends ControladorIndex
 			$usuario = new Usuario();
 			$usuarios = $usuario->getListado();
 		}
-
+		
 		//Llamar a la vista
 		//require_once("vistas/usuarios_listado.php");
-
-		$tpl = Template::getInstance();
+		
+		$tpl = TemplateUser::getInstance();
 		$datos = array(
 			'usuarios' => $usuarios,
 			'buscar' => $buscar,
@@ -85,12 +81,13 @@ class ControladorUsuario extends ControladorIndex
 		);
 
 
-		$tpl->asignar('usuario_nuevo', $this->getUrl("usuario", "nuevo"));
 		$tpl->mostrar('usuarios_listado', $datos);
 	}
 
 	function nuevo()
 	{
+		
+		$tpl = TemplateUser::getInstance();
 		$mensaje = "";
 		if (isset($_POST["nombre"])) {
 			$fotoValida = false;
@@ -118,11 +115,54 @@ class ControladorUsuario extends ControladorIndex
 			}
 		}
 
-		$tpl = Template::getInstance();
 		$tpl->asignar('titulo', "Nuevo Usuario");
 		$tpl->asignar('buscar', "");
 		$tpl->asignar('mensaje', $mensaje);
 		$tpl->mostrar('usuarios_nuevo', array());
+	}
+
+	function editar()
+	{
+		Session::init();
+		$tpl = TemplateUser::getInstance();
+		$mensaje = "";
+		if (isset($_POST["nombre"])) {
+			$fotoValida = false;
+			$rutaFoto = "";
+			if (isset($_FILES['foto'])) {
+				$chequeoFoto = uploadImagen($_FILES['foto']);
+				$fotoValida = $chequeoFoto["res"];
+				$mensaje = $chequeoFoto["error"];
+				$rutaFoto = $chequeoFoto["ruta"];
+			}
+			if ($fotoValida) {
+				$usr = new Usuario();
+				$usr->setNombre($_POST["nombre"]);
+				$usr->setPassword($_POST["pass"]);
+				$usr->setApellido($_POST["apellido"]);
+				$usr->setCI($_POST["ci"]);
+				$usr->setEdad($_POST["edad"]);
+				$usr->setEmail($_POST["email"]);
+				$usr->setFoto($rutaFoto);
+				if ($usr->editar()) {
+					Session::set("foto", $rutaFoto);
+					$this->redirect("usuario", "listado");
+					exit;
+				} else {
+					$mensaje = "Error! No se pudo editar el usuario";
+				}
+			}
+		}
+
+
+		$usuario = new Usuario();
+		$usuario = $usuario->getUsuarioByID(Session::get("usuario_id"));
+		$data = objectToArray($usuario);
+		$tpl->asignar('titulo', "Editar Usuario");
+		$tpl->asignar('buscar', "");
+		$tpl->asignar('mensaje', $mensaje);
+		$tpl->mostrar('usuarios_editar', $data);
+	
 	}
 
 	function login()
@@ -133,19 +173,20 @@ class ControladorUsuario extends ControladorIndex
 
 		if (isset($_POST["email"])) {
 			$usr = new Usuario();
-
+			
 			$email = $_POST["email"];
 			$pass = sha1($_POST["password"]);
-
+			
 			if ($usr->login($email, $pass)) {
 				
 				$this->redirect("usuario", "listado");
 				exit;
 			} else {
-				$mensaje = "Error! No se pudo agregar el usuario";
+				$mensaje = "USUARIO Y/O PASSWORD INCORRECTO";
 			}
 		}
-		$tpl = Template::getInstance();
+		
+		$tpl = TemplateUser::getInstance();
 		$tpl->asignar('titulo', "Nuevo Usuario");
 		$tpl->asignar('loginUrl', "");
 		$tpl->asignar('buscar', "");
