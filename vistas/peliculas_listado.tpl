@@ -33,7 +33,7 @@
           {/if}
 
           <div class="row">
-            {foreach from=$detalles item=detalle key=key}
+            {foreach from=$detalles item=detalle key=idVideo}
             <div class="col">
               <div 
                 class="card film" 
@@ -64,7 +64,33 @@
                       {/if}
                     </button>
                     
-                    <button class="btn btn-info" onClick="paraVer('{$detalle->getAudiovisual()->getIdVideo()}');"> Ver más tarde </button> 
+                    
+                    {assign var="ocultarVisto" value=""}
+                    {assign var="ocultarVerMasTarde" value=""}
+                    {if $detalle->verMasTarde()}
+                      {assign var="ocultarVerMasTarde" value="display: none"}  
+                    {else}
+                      {assign var="ocultarVisto" value="display: none"}
+                    {/if}
+
+                    <button 
+                      class="btn btn-danger"
+                      id="dejarver-{$idVideo}" 
+                      onClick="dejarVer('{$idVideo}')"
+                      style="{$ocultarVisto}">
+                      <i class="fas fa-check"></i> Visto
+                    </button>
+                    
+                     
+                     <button 
+                       class="btn btn-info"
+                       id="pver-{$idVideo}" 
+                       onClick="paraVer('{$idVideo}');"
+                       style="{$ocultarVerMasTarde}"
+                       > 
+                       Ver más tarde 
+                     </button> 
+                    
                     
                   </div>
                 </div>

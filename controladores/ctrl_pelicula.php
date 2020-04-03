@@ -30,6 +30,7 @@ class ControladorPelicula extends ControladorIndex
 
 	function listado($params = array())
 	{
+		Session::init();
 		$buscar = "";
 		$titulo = "Listado";
 		$mensaje = "";
@@ -45,9 +46,8 @@ class ControladorPelicula extends ControladorIndex
 
 		$favoritos = $this->favoritos();
 
-
-		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
-
+		$detalles = self::getDetallesConVerMasTarde($favoritos, $peliculas);
+			
 
 		//Llamar a la vista
 		$tpl = TemplateUser::getInstance();
@@ -98,8 +98,8 @@ class ControladorPelicula extends ControladorIndex
 		//require_once("vistas/peliculas_listado.php");
 
 
-		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
-
+		$detalles = self::getDetallesConVerMasTarde($favoritos, $peliculas);
+			
 		//Llamar a la vista
 		$tpl = TemplateUser::getInstance();
 		$datos = array(
@@ -117,12 +117,12 @@ class ControladorPelicula extends ControladorIndex
 	{
 
 		Session::init();
-		
+
 		$idVideo = $params[0];
 		$this->log->putLog($idVideo);
 		$params = array(
-				"imdbID" => $idVideo,
-				"id_usuario" => Session::get('usuario_id')
+			"imdbID" => $idVideo,
+			"id_usuario" => Session::get('usuario_id')
 		);
 
 		PeliculaServiceFactory::createService($params)->borrarVerMasTarde();
@@ -149,14 +149,14 @@ class ControladorPelicula extends ControladorIndex
 		$this->log->putLog("Agregar a más tarde");
 
 		if (isset($_POST["id_pelicula"])) {
-			
-			
+
+
 			$params =
-			array(
-				"imdbID" => $_POST["id_pelicula"],
-				"id_usuario" => Session::get('usuario_id')
-			);
-			
+				array(
+					"imdbID" => $_POST["id_pelicula"],
+					"id_usuario" => Session::get('usuario_id')
+				);
+
 			$audiovisual = $this->getAudioVisual($params["imdbID"]);
 
 			$params["tipo"] = $audiovisual->tipo();
@@ -170,56 +170,73 @@ class ControladorPelicula extends ControladorIndex
 				$mensaje = "Error! No se pudo agregar la película";
 				$res = 0;
 			}
-
 		} else {
-			
+
 			$mensaje = "error, no se envío película";
 			$res = -1;
-		
 		}
 
 		echo json_encode(array("res" => $res, "mensaje" => $mensaje));
 		exit;
 	}
 
-	function ver_peliculas_mas_tarde(){
+	function ver_peliculas_mas_tarde()
+	{
 		$mensaje = "";
 		Session::init();
 
 		$this->log->putLog("ver más tarde");
-	
+
 		$idUsuario = $_POST["id_usuario"];
 
 		$this->log->putLog("ID_USUARIO: " . $idUsuario);
 		$this->log->putLog("SESSION_ID: " . Session::get("usuario_id"));
-		if(!(isset($idUsuario) && $idUsuario == Session::get("usuario_id"))){
+		if (!(isset($idUsuario) && $idUsuario == Session::get("usuario_id"))) {
 			$respuesta = json_encode(
 				array(
-					"mensaje" => "Error en la llamada", 
+					"mensaje" => "Error en la llamada",
 					"ok" => false,
 					"films" => []
-				));
-			
+				)
+			);
+
 			echo $respuesta;
-			exit;		
+			exit;
 		}
 
 		$params =
-		array(
-			"id_usuario" => Session::get('usuario_id')
-		);
+			array(
+				"id_usuario" => Session::get('usuario_id')
+			);
 
 		$audiovisuales = PeliculaServiceFactory::createService($params)->peliculasMasTardeUsuario();
-		
+
 		$respuesta = json_encode(
 			array(
-				"mensaje" => "Se ha ejecutado correctamente", 
+				"mensaje" => "Se ha ejecutado correctamente",
 				"ok" => true,
 				"films" => $audiovisuales
-			));
-		
+			)
+		);
+
 		echo $respuesta;
-		exit;	
+		exit;
+	}
+
+	private function getDetallesConVerMasTarde($favoritos, $peliculas){
+		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
+		$idUsuario = Session::get("usuario_id");
+	    $peliculasMasTarde = PeliculaServiceFactory::createService(array("id_usuario" => $idUsuario))
+			->peliculasMasTardeUsuario();
+		
+		foreach ($peliculasMasTarde as $p) {
+			$idVideo = $p->getIdVideo();
+			$detalle = DetallesAudioVisual::getFavoritoByIdVideo($detalles, $idVideo);
+			$detalle->setVerMasTarde(true);
+			$detalles[$idVideo] = $detalle;
+		}
+
+		return $detalles;
 	}
 
 	function agregarFavorito($params = array())
@@ -269,6 +286,8 @@ class ControladorPelicula extends ControladorIndex
 			->listadoFavoritosPorUsuario($usuario);
 		return $favoritos;
 	}
+
+	
 
 	private function getAudioVisual($idVideo)
 	{

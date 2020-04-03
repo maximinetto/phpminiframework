@@ -54,8 +54,8 @@ function paraVer(id_pelicula) {
     success: function(json) {
       if (json.res == 1) {
         //todo ok
-        alert(json.mensaje);
-        //$('#idboton').val("Agregado");
+        $(`#pver-${id_pelicula}`).hide();
+        $(`#dejarver-${id_pelicula}`).show();
       } else {
         alert(json.mensaje);
       }
@@ -69,6 +69,27 @@ function paraVer(id_pelicula) {
   //ejecutar el llamado ajax a pelicula/agregar_lista/ -> demora 1 min
   //ejecuta cargarParaVer();
   // cuando pasa 1 min, ejecutar success()
+}
+
+function dejarVer(idVideo){
+  $.ajax({
+    url: "/tip/framework/pelicula/quitar_visto/",
+    data: { id_pelicula: idVideo },
+    type: "POST",
+    dataType: "json",
+    success: function(json) {
+      if (json.res == 1) {
+        //todo ok
+        alert(json.mensaje);
+        //$('#idboton').val("Agregado");
+      } else {
+        alert(json.mensaje);
+      }
+    },
+    error: function(json) {
+      console.log(json);
+    }
+  });
 }
 
 function cargarParaVer(id_usuario) {

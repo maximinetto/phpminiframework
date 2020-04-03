@@ -5,11 +5,14 @@ class DetallesAudioVisual
 
     private $audiovisual;
     private $favorito;
+    private $verMasTarde;
+
 
     function __construct(AudioVisual $audioVisual, bool $favorito)
     {
         $this->audiovisual = $audioVisual;
         $this->favorito = $favorito;
+        $this->verMasTarde = false;
     }
 
     /**
@@ -52,6 +55,14 @@ class DetallesAudioVisual
         return $this;
     }
 
+    public function verMasTarde(){
+        return $this->verMasTarde;
+    }
+
+    public function setVerMasTarde($verMasTarde){
+        $this->verMasTarde = $verMasTarde;
+    }
+
     static function ponerFavoritoPelicula($favoritos, $audiovisuales){
         $log = Logger::defaultLog();
 		$resultados = array();
@@ -64,14 +75,14 @@ class DetallesAudioVisual
                 if($favorito->getIdVideo() === $audio->getIdVideo()){
                     $encontrado = true;
                     $detalle = new DetallesAudioVisual($audio, true);
-					$resultados[] = $detalle;
+					$resultados[$favorito->getIdVideo()] = $detalle;
 					break;	
 				}	
 			}
 
 			if(!$encontrado){
                 $detalle = new DetallesAudioVisual($audio, false);
-				$resultados[] = $detalle;
+				$resultados[$audio->getIdVideo()] = $detalle;
             }
         }
         
@@ -79,13 +90,9 @@ class DetallesAudioVisual
 
     }
     
-    static function getFavoritoByIdVideo($detalles,$idVideo){
+    static function getFavoritoByIdVideo($detalles,$idVideo) : DetallesAudioVisual{
         
-        foreach ($detalles as $detalle) {
-            if($detalle->getAudiovisual()->getIdVideo() === $idVideo){
-                return $detalle->getAudiovisual();
-            }
-        }
+        return $detalles[$idVideo];
     }
 
 }
