@@ -90,7 +90,7 @@ class DetallesAudioVisual
 
     }
     
-    static function getFavoritoByIdVideo($detalles,$idVideo) : DetallesAudioVisual{
+    static function getFavoritoByIdVideo($detalles,$idVideo){
         
         return $detalles[$idVideo];
     }

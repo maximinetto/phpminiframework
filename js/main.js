@@ -80,8 +80,9 @@ function dejarVer(idVideo){
     success: function(json) {
       if (json.res == 1) {
         //todo ok
-        alert(json.mensaje);
-        //$('#idboton').val("Agregado");
+        $(`#dejarver-${idVideo}`).hide();
+        $(`#pver-${idVideo}`).show();
+
       } else {
         alert(json.mensaje);
       }

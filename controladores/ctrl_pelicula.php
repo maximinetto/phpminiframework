@@ -165,9 +165,47 @@ class ControladorPelicula extends ControladorIndex
 
 			if ($para_ver->agregarMasTarde()) {
 				$res = 1;
-				$mensaje = "Agregado ok";
+				$mensaje = "Se ha agregado a ver más tarde";
 			} else {
-				$mensaje = "Error! No se pudo agregar la película";
+				$mensaje = "Error! No se pudo agregar la película de ver más";
+				$res = 0;
+			}
+		} else {
+
+			$mensaje = "error, no se envío película";
+			$res = -1;
+		}
+
+		echo json_encode(array("res" => $res, "mensaje" => $mensaje));
+		exit;
+	}
+
+	function quitar_visto(){
+		$mensaje = "";
+		Session::init();
+
+		$this->log->putLog("Quitar visto");
+
+		if (isset($_POST["id_pelicula"])) {
+
+
+			$params =
+				array(
+					"imdbID" => $_POST["id_pelicula"],
+					"id_usuario" => Session::get('usuario_id')
+				);
+
+			$audiovisual = $this->getAudioVisual($params["imdbID"]);
+
+			$params["tipo"] = $audiovisual->tipo();
+
+			$para_ver = PeliculaServiceFactory::createService($params);
+
+			if ($para_ver->borrarVerMasTarde()) {
+				$res = 1;
+				$mensaje = "Se ha borrado la película de ver más tarde";
+			} else {
+				$mensaje = "Error! No se pudo borrar la película de ver más tarde";
 				$res = 0;
 			}
 		} else {
@@ -231,9 +269,13 @@ class ControladorPelicula extends ControladorIndex
 		
 		foreach ($peliculasMasTarde as $p) {
 			$idVideo = $p->getIdVideo();
-			$detalle = DetallesAudioVisual::getFavoritoByIdVideo($detalles, $idVideo);
-			$detalle->setVerMasTarde(true);
-			$detalles[$idVideo] = $detalle;
+			
+			if(array_key_exists($idVideo, $detalles)){
+				$detalle = $detalles[$idVideo];
+				$detalle->setVerMasTarde(true);
+				$detalles[$idVideo] = $detalle;
+			}
+
 		}
 
 		return $detalles;

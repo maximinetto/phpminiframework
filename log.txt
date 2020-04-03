@@ -1969,3 +1969,243 @@ Fri Apr 03 '20 05.08 PM &raquo; Entra:
 Fri Apr 03 '20 05.08 PM &raquo; Entra: 
 Fri Apr 03 '20 05.08 PM &raquo; Entra: 
 Fri Apr 03 '20 05.08 PM &raquo; Agregar a más tarde
+Fri Apr 03 '20 05.15 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; series
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; {"id_usuario":30,"imdbID":"tt0069134","tipo":"Pelicula"}
+Fri Apr 03 '20 05.17 PM &raquo; {"id_usuario":30,"imdbID":"tt0110912","tipo":"Pelicula"}
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Quitar visto
+Fri Apr 03 '20 05.17 PM &raquo; IDUSUARIO: 30
+Fri Apr 03 '20 05.17 PM &raquo; IDPELICULA: tt0110912
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; series
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; movie
+Fri Apr 03 '20 05.17 PM &raquo; {"id_usuario":30,"imdbID":"tt0069134","tipo":"Pelicula"}
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Quitar visto
+Fri Apr 03 '20 05.17 PM &raquo; IDUSUARIO: 30
+Fri Apr 03 '20 05.17 PM &raquo; IDPELICULA: tt0069134
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Agregar a más tarde
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Agregar a más tarde
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Quitar visto
+Fri Apr 03 '20 05.17 PM &raquo; IDUSUARIO: 30
+Fri Apr 03 '20 05.17 PM &raquo; IDPELICULA: tt3265262
+Fri Apr 03 '20 05.17 PM &raquo; Entra: 
+Fri Apr 03 '20 05.17 PM &raquo; Quitar visto
+Fri Apr 03 '20 05.17 PM &raquo; IDUSUARIO: 30
+Fri Apr 03 '20 05.17 PM &raquo; IDPELICULA: tt0110912
+Fri Apr 03 '20 05.18 PM &raquo; Entra: 
+Fri Apr 03 '20 05.18 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.18 PM &raquo; star
+Fri Apr 03 '20 05.18 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.18 PM &raquo; Busqueda con criterios
+Fri Apr 03 '20 05.18 PM &raquo; movie
+Fri Apr 03 '20 05.18 PM &raquo; movie
+Fri Apr 03 '20 05.18 PM &raquo; movie
+Fri Apr 03 '20 05.18 PM &raquo; movie
+Fri Apr 03 '20 05.18 PM &raquo; movie
+Fri Apr 03 '20 05.18 PM &raquo; movie
+Fri Apr 03 '20 05.18 PM &raquo; movie
+Fri Apr 03 '20 05.18 PM &raquo; movie
+Fri Apr 03 '20 05.18 PM &raquo; movie
+Fri Apr 03 '20 05.18 PM &raquo; movie
+Fri Apr 03 '20 05.18 PM &raquo; Entra: 
+Fri Apr 03 '20 05.18 PM &raquo; Agregar a más tarde
+Fri Apr 03 '20 05.18 PM &raquo; Entra: 
+Fri Apr 03 '20 05.18 PM &raquo; Agregar a más tarde
+Fri Apr 03 '20 05.18 PM &raquo; Entra: 
+Fri Apr 03 '20 05.18 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.18 PM &raquo; harry+pott
+Fri Apr 03 '20 05.18 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.18 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.19 PM &raquo; Entra: 
+Fri Apr 03 '20 05.19 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.19 PM &raquo; harry+pott
+Fri Apr 03 '20 05.19 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.19 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.22 PM &raquo; Entra: 
+Fri Apr 03 '20 05.22 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.22 PM &raquo; harry+pott
+Fri Apr 03 '20 05.22 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.22 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.24 PM &raquo; Entra: 
+Fri Apr 03 '20 05.24 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.24 PM &raquo; harry+pott
+Fri Apr 03 '20 05.24 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.24 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.24 PM &raquo; Entra: 
+Fri Apr 03 '20 05.24 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.24 PM &raquo; harry
+Fri Apr 03 '20 05.24 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.24 PM &raquo; Busqueda con criterios
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.24 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.24 PM &raquo; Entra: 
+Fri Apr 03 '20 05.24 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.24 PM &raquo; star
+Fri Apr 03 '20 05.24 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.24 PM &raquo; Busqueda con criterios
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; movie
+Fri Apr 03 '20 05.24 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.24 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.25 PM &raquo; harry
+Fri Apr 03 '20 05.25 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.25 PM &raquo; Busqueda con criterios
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Agregar a más tarde
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.25 PM &raquo; star
+Fri Apr 03 '20 05.25 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.25 PM &raquo; Busqueda con criterios
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt1201607","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; series
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt1201607","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.25 PM &raquo; harry
+Fri Apr 03 '20 05.25 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.25 PM &raquo; Busqueda con criterios
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt1201607","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Quitar visto
+Fri Apr 03 '20 05.25 PM &raquo; IDUSUARIO: 30
+Fri Apr 03 '20 05.25 PM &raquo; IDPELICULA: tt1201607
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.25 PM &raquo; star
+Fri Apr 03 '20 05.25 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.25 PM &raquo; Busqueda con criterios
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt0076759","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Quitar visto
+Fri Apr 03 '20 05.25 PM &raquo; IDUSUARIO: 30
+Fri Apr 03 '20 05.25 PM &raquo; IDPELICULA: tt0076759
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
+Fri Apr 03 '20 05.25 PM &raquo; Entra en buscar
+Fri Apr 03 '20 05.25 PM &raquo; harry
+Fri Apr 03 '20 05.25 PM &raquo; Id usuario: 30
+Fri Apr 03 '20 05.25 PM &raquo; Busqueda con criterios
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; movie
+Fri Apr 03 '20 05.25 PM &raquo; {"id_usuario":30,"imdbID":"tt2488496","tipo":"Pelicula"}
+Fri Apr 03 '20 05.25 PM &raquo; Entra: 
