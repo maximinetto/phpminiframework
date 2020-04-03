@@ -11,7 +11,7 @@ require "clases/helpers/accion_favorito.php";
 require "clases/helpers/agregar_favorito.php";
 require "clases/helpers/quitar_favorito.php";
 
-require_once('clases/template.php');
+require_once('clases/template_usuario.php');
 require_once('clases/session.php');
 require_once('clases/auth.php');
 require_once 'vendor/autoload.php';
@@ -50,7 +50,7 @@ class ControladorPelicula extends ControladorIndex
 
 
 		//Llamar a la vista
-		$tpl = Template::getInstance();
+		$tpl = TemplateUser::getInstance();
 		$datos = array(
 			'detalles' => $detalles,
 			'buscar' => $buscar,
@@ -101,7 +101,7 @@ class ControladorPelicula extends ControladorIndex
 		$detalles = DetallesAudioVisual::ponerFavoritoPelicula($favoritos, $peliculas);
 
 		//Llamar a la vista
-		$tpl = Template::getInstance();
+		$tpl = TemplateUser::getInstance();
 		$datos = array(
 			'detalles' => $detalles,
 			'buscar' => $buscar,
@@ -130,7 +130,7 @@ class ControladorPelicula extends ControladorIndex
 		$converter = new AudioVisualConverter();
 		$audiovisual = $converter($idVideo);
 
-		$tpl = Template::getInstance();
+		$tpl = TemplateUser::getInstance();
 		$datos = array(
 			'buscar' => '',
 			'titulo' => $audiovisual->getTitle(),

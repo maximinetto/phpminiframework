@@ -30,8 +30,8 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         {if $foto != ""}
                         <img src="{$foto}" alt="fotoperfil" class="profile-photo" />
-                        {/if}
                         {$nombre}
+                        {/if}
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="{$usuario_editar}">Ver Perfil</a></li>

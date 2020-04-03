@@ -11,7 +11,7 @@
     <!-- Custom styles for this template -->
     <link href="fonts/css/all.min.css" rel="stylesheet" />
     <link href="css/dashboard.css" rel="stylesheet" />
-    
+    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/main.css" />
     
   </head>

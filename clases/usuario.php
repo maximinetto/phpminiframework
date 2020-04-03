@@ -166,12 +166,9 @@ class Usuario extends ClaseBase{
         $ape=$this->getApellido();
         $edad=$this->getEdad();
         $ci=$this->getCI();
-        $log->putLog("Password: " . $this->password);
         $password = sha1($this->password);
         $email=$this->getEmail();
         $foto=$this->getFoto();
-
-        $log->putLog("Usuario: [$idUsuario, $nombre, $ape, $edad, $ci, $password, $email, $foto]");
 
         $stmt = $this->getDB()->prepare( 
             "UPDATE usuarios 
